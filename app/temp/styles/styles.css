@@ -449,3 +449,187 @@ template {
 [hidden] {
   display: none;
 }
+
+html {
+  height: 165em;
+}
+
+body {
+  height: 165em;
+}
+
+.about {
+
+  width: 100%;
+  height: 30em;
+  background-color: #2382B0;
+  color: #FFFFFF;
+}
+
+.about__title {
+
+  }
+
+.about__content {
+
+  }
+
+.contact {
+
+  width: 100%;
+  height: 22.5em;
+  background-color: #2382B0;
+  color: #FFFFFF;
+}
+
+.contact__title {
+
+  }
+
+.contact__content {
+
+  }
+
+.hero {
+
+  width: 100%;
+  height: 30em;
+  background-color: #25ABEC;
+  color: #1F4354;
+}
+
+.hero__logo {
+
+  }
+
+.hero__name {
+
+  }
+
+.hero__tagline {
+
+  }
+
+.portfolio {
+
+  width: 100%;
+  height: 37.5em;
+  background-color: #a7c3d1;
+  color: #111D23;
+}
+
+.portfolio__title {
+
+  }
+
+.portfolio__example-container {
+
+  }
+
+.portfolio__example--1 {
+
+    }
+
+.portfolio__example--2 {
+
+    }
+
+.portfolio__example--3 {
+
+    }
+
+.portfolio__example--4 {
+
+    }
+
+.portfolio__example--5 {
+
+    }
+
+.portfolio__example--6 {
+
+    }
+
+.site-footer {
+
+  width: 100%;
+  height: 7.5em;
+  background-color: #1F4354;
+  color: #FFFFFF;
+}
+
+.site-footer__icon-container {
+
+  }
+
+.site-footer__icon--1 {
+
+    }
+
+.site-footer__icon--2 {
+
+    }
+
+.site-footer__icon--3 {
+
+    }
+
+.site-footer__icon--4 {
+
+    }
+
+.site-header {
+
+  width: 100%;
+  height: 7.5em;
+  background-color: #1F4354;
+  color: #FFFFFF;
+}
+
+.site-header__navigation {
+
+  }
+
+.skills {
+
+  width: 100%;
+  height: 30em;
+  background-color: #1F4354;
+  color: #FFFFFF;
+}
+
+.skills__title {
+
+  }
+
+.skills__content {
+
+  }
+
+.wrapper--site-header {
+
+  }
+
+.wrapper--hero {
+
+  }
+
+.wrapper--about {
+
+  }
+
+.wrapper--skills {
+
+  }
+
+.wrapper--portfolio {
+
+  }
+
+.wrapper--contact {
+
+  }
+
+.wrapper--site-footer {
+    
+  }

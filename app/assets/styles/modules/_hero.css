@@ -1,0 +1,19 @@
+.hero {
+
+  width: 100%;
+  height: 30em;
+  background-color: $blueLight;
+  color: $blueDark;
+
+  &__logo {
+
+  }
+
+  &__name {
+
+  }
+
+  &__tagline {
+
+  }
+}

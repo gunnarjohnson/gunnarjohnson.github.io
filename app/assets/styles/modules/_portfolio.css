@@ -1,0 +1,42 @@
+.portfolio {
+
+  width: 100%;
+  height: 37.5em;
+  background-color: $grayLight;
+  color: $grayDark;
+
+  &__title {
+
+  }
+
+  &__example-container {
+
+  }
+
+  &__example {
+
+    &--1 {
+
+    }
+
+    &--2 {
+
+    }
+
+    &--3 {
+
+    }
+
+    &--4 {
+
+    }
+
+    &--5 {
+
+    }
+
+    &--6 {
+
+    }
+  }
+}

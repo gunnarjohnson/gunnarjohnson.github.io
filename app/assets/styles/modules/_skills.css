@@ -1,0 +1,15 @@
+.skills {
+
+  width: 100%;
+  height: 30em;
+  background-color: $blueDark;
+  color: #FFFFFF;
+
+  &__title {
+
+  }
+
+  &__content {
+
+  }
+}
