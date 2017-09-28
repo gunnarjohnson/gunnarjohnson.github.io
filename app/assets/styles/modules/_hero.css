@@ -1,0 +1,23 @@
+.hero {
+
+  width: 100%;
+  height: 31.25em;
+  background-color: $blueLight;
+  color: $blueDark;
+
+  &__logo {
+
+  }
+
+  &__name {
+    font-family: Oswald, sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+  }
+
+  &__tagline {
+    font-family: Shadows Into Light, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+  }
+}
