@@ -451,10 +451,12 @@ template {
 }
 
 html {
+  width: 100%;
   height: 165em;
 }
 
 body {
+  width: 100%;
   height: 165em;
 }
 
@@ -499,15 +501,19 @@ body {
   }
 
 .hero {
-
+  position: relative;
+  z-index: -1;
   width: 100%;
-  height: 31.25em;
-  background-color: #25ABEC;
-  color: #1F4354;
+  height: 35em;
+  background-color: #1F4354;
+  color: #FFFFFF;
+  border-bottom: 1.25em solid #25ABEC;
 }
 
-.hero__logo {
-
+.hero__image {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
   }
 
 .hero__name {
@@ -518,9 +524,23 @@ body {
 
 .hero__tagline {
     font-family: Shadows Into Light, sans-serif;
-    font-size: 4em;
-    font-weight: 700;
+    text-shadow: 0 0 0.5em black;
   }
+
+.hero__tagline--main {
+      color: #25ABEC;
+      font-size: 4em;
+      font-weight: 700;
+    }
+
+.hero__tagline--other {
+      width: 8em;
+      height: 10em;
+      color: #aad7ed;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-align: center;
+    }
 
 .portfolio {
 
@@ -600,7 +620,7 @@ body {
     }
 
 .site-header {
-
+  display: none;
   width: 100%;
   height: 5em;
   background-color: #1F4354;
@@ -636,7 +656,38 @@ body {
   }
 
 .wrapper--hero {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: [col-0] 1fr [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5];
+    grid-template-rows: [row-0] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5];
+  }
 
+.wrapper--hero__info {
+    grid-column: col-2 / col-5;
+    grid-row: row-2 / row-4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+.wrapper--hero__tagline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
 .wrapper--about {
@@ -656,5 +707,5 @@ body {
   }
 
 .wrapper--site-footer {
-    
+
   }

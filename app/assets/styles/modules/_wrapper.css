@@ -5,7 +5,25 @@
   }
 
   &--hero {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: [col-0] 1fr [col-1] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-5];
+    grid-template-rows: [row-0] 1fr [row-1] 1fr [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5];
+  }
 
+  &--hero__info {
+    grid-column: col-2 / col-5;
+    grid-row: row-2 / row-4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--hero__tagline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   &--about {
@@ -25,6 +43,6 @@
   }
 
   &--site-footer {
-    
+
   }
 }

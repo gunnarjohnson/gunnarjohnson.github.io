@@ -1,12 +1,16 @@
 .hero {
-
+  position: relative;
+  z-index: -1;
   width: 100%;
-  height: 31.25em;
-  background-color: $blueLight;
-  color: $blueDark;
+  height: 35em;
+  background-color: $blueDark;
+  color: #FFFFFF;
+  border-bottom: 1.25em solid $blueLight;
 
-  &__logo {
-
+  &__image {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
   }
 
   &__name {
@@ -17,7 +21,21 @@
 
   &__tagline {
     font-family: Shadows Into Light, sans-serif;
-    font-size: 4em;
-    font-weight: 700;
+    text-shadow: 0 0 0.5em black;
+
+    &--main {
+      color: $blueLight;
+      font-size: 4em;
+      font-weight: 700;
+    }
+
+    &--other {
+      width: 8em;
+      height: 10em;
+      color: $blueSky;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-align: center;
+    }
   }
 }
