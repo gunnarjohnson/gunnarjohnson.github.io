@@ -2,11 +2,13 @@
 
   width: 100%;
   height: 37.5em;
-  background-color: $grayLight;
-  color: $grayDark;
+  background-color: $blueLight;
+  color: $blueDark;
 
   &__title {
-
+    font-family: Oswald, sans-serif;
+    font-size: 5em;
+    font-weight: 700;
   }
 
   &__example-container {
@@ -14,6 +16,10 @@
   }
 
   &__example {
+
+    font-family: Shadows Into Light, sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
 
     &--1 {
 

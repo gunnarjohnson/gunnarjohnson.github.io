@@ -1,9 +1,9 @@
 .site-footer {
 
   width: 100%;
-  height: 7.5em;
-  background-color: $blueDark;
-  color: #FFFFFF;
+  height: 5em;
+  background-color: $grayLight;
+  color: $grayDark;
 
   &__icon-container {
 
