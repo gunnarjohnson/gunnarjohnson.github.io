@@ -2,40 +2,86 @@
   position: relative;
   z-index: -1;
   width: 100%;
-  height: 35em;
+  height: 100%;
   background-color: $blueDark;
   color: #FFFFFF;
   border-bottom: 1.25em solid $blueLight;
 
+  @mixin atSmall {
+    height: 35em;
+  }
+
   &__image {
-    position: absolute;
+    grid-column: col-0 / col-5;
+    grid-row: row-0 / row-5;
+    justify-self: center;
+    position: relative;
     z-index: -1;
     opacity: 0.8;
   }
 
   &__name {
     font-family: Oswald, sans-serif;
-    font-size: 5em;
     font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: none;
+
+    @mixin atSmall {
+      font-size: 3.75em;
+      text-shadow: 1px 1px 0.25em rgba(0, 0, 0, 0.2), 1px -1px 0.25em rgba(0, 0, 0, 0.2), -1px 1px 0.25em rgba(0, 0, 0, 0.2), -1px -1px 0.25em rgba(0, 0, 0, 0.2);
+    }
+
+    @mixin atMedium {
+      text-shadow: none;
+    }
+
+    @mixin atLarge {
+      font-size: 5em;
+    }
   }
 
   &__tagline {
     font-family: Shadows Into Light, sans-serif;
-    text-shadow: 0 0 0.5em black;
+    text-shadow: none;
+    text-align: center;
+
+    @mixin atSmall {
+      text-shadow: 1px 1px 0.25em rgba(0, 0, 0, 0.4), 1px -1px 0.25em rgba(0, 0, 0, 0.4), -1px 1px 0.25em rgba(0, 0, 0, 0.4), -1px -1px 0.25em rgba(0, 0, 0, 0.4);
+    }
+
+    @mixin atMedium {
+      text-shadow: 0 0 0.5em black;
+    }
 
     &--main {
       color: $blueLight;
-      font-size: 4em;
       font-weight: 700;
+      font-size: 1.75em;
+
+      @mixin atSmall {
+        font-size: 2.75em;
+      }
+
+      @mixin atLarge {
+        font-size: 4em;
+      }
     }
 
     &--other {
-      width: 8em;
-      height: 10em;
       color: $blueSky;
-      font-size: 1.5em;
+      font-size: 1em;
       font-weight: 700;
-      text-align: center;
+
+      @mixin atSmall {
+        width: 8em;
+        height: 10em;
+        font-size: 1em;
+      }
+
+      @mixin atLarge {
+        font-size: 1.5em;
+      }
     }
   }
 }
