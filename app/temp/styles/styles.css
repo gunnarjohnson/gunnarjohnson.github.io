@@ -507,20 +507,19 @@ body {
   height: 100%;
   background-color: #1F4354;
   color: #FFFFFF;
-  border-bottom: 1.25em solid #25ABEC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (min-width: 530px) {
 
 .hero {
-    height: 35em
+    height: 66.6%;
+    border-bottom: 1.25em solid #25ABEC
 }
   }
 
 .hero__image {
-    grid-column: col-0 / col-5;
-    grid-row: row-0 / row-5;
-    justify-self: center;
     position: relative;
     z-index: -1;
     opacity: 0.8;
@@ -606,7 +605,6 @@ body {
 
 .hero__tagline--other {
         width: 8em;
-        height: 10em;
         font-size: 1em
     }
   }
@@ -739,11 +737,28 @@ body {
     grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5];
   }
 
+.wrapper--hero__image {
+    grid-column: col-0 / col-5;
+    grid-row: row-0 / row-3;
+    justify-self: center;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 0.625em solid #25ABEC;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+@media (min-width: 530px) {
+
+.wrapper--hero__image {
+      grid-row: row-0 / row-5;
+      border-bottom: none
+  }
+  }
+
 .wrapper--hero__info {
     grid-column: col-0 / col-5;
     grid-row: row-3 / row-5;
-    -ms-flex-item-align: center;
-        align-self: center;
     justify-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -755,13 +770,21 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.625em solid #25ABEC;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
   }
 
 @media (min-width: 530px) {
 
 .wrapper--hero__info {
-      grid-row: row-4 / row-5
+      border-bottom: none
 
   }
   }
@@ -770,9 +793,7 @@ body {
 
 .wrapper--hero__info {
       grid-column: col-2 / col-5;
-      grid-row: row-2 / row-5;
-      -ms-flex-item-align: center;
-          align-self: center
+      grid-row: row-0 / row-5
 
   }
   }

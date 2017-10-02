@@ -5,16 +5,14 @@
   height: 100%;
   background-color: $blueDark;
   color: #FFFFFF;
-  border-bottom: 1.25em solid $blueLight;
+  box-sizing: border-box;
 
   @mixin atSmall {
-    height: 35em;
+    height: 66.6%;
+    border-bottom: 1.25em solid $blueLight;
   }
 
   &__image {
-    grid-column: col-0 / col-5;
-    grid-row: row-0 / row-5;
-    justify-self: center;
     position: relative;
     z-index: -1;
     opacity: 0.8;
@@ -75,7 +73,6 @@
 
       @mixin atSmall {
         width: 8em;
-        height: 10em;
         font-size: 1em;
       }
 
