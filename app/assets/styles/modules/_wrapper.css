@@ -5,7 +5,61 @@
   }
 
   &--hero {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: [col-0] 20% [col-1] 20% [col-2] 20% [col-3] 20% [col-4] 20% [col-5];
+    grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5];
+  }
 
+  &--hero__image {
+    grid-column: col-0 / col-5;
+    grid-row: row-0 / row-3;
+    justify-self: center;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 0.625em solid $blueLight;
+    box-sizing: border-box;
+
+    @mixin atSmall {
+      grid-row: row-0 / row-5;
+      border-bottom: none;
+    }
+  }
+
+  &--hero__info {
+    grid-column: col-0 / col-5;
+    grid-row: row-3 / row-5;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.625em solid $blueLight;
+    box-sizing: border-box;
+
+    @mixin atSmall {
+      border-bottom: none;
+    }
+
+    @mixin atMedium {
+      grid-column: col-2 / col-5;
+      grid-row: row-0 / row-5;
+    }
+
+  }
+
+  &--hero__tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @mixin atSmall {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &--about {
@@ -25,6 +79,6 @@
   }
 
   &--site-footer {
-    
+
   }
 }

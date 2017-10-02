@@ -20,10 +20,23 @@
   </header>
 
   <section class="hero">
-    <div class="wrapper wrapper--hero">
-      <div class="hero__logo">Logo</div>
-      <div class="hero__name">Gunnar Johnson</div>
-      <div class="hero__tagline">Web Developer</div>
+    <div class="wrapper--hero">
+      <div class="wrapper--hero__image">
+        <picture class="hero__image">
+          <source srcset="assets/images/hero-image__1920w--wide--placeholder.jpg" media="(min-width: 1280px)">
+          <source srcset="assets/images/hero-image__1280w--placeholder.jpg" media="(min-width: 800px)">
+          <img srcset="assets/images/hero-image__800w--placeholder.jpg" alt="Photo of Gunnar Johnson">
+        </picture>
+      </div>
+      <div class="wrapper--hero__info">
+        <div class="hero__name">Gunnar Johnson</div>
+        <div class="hero__tagline hero__tagline--main">Front-End Web Developer</div>
+        <div class="wrapper--hero__tagline">
+          <div class="hero__tagline hero__tagline--other">Audio Producer</div>
+          <div class="hero__tagline hero__tagline--other">Independent Musician</div>
+          <div class="hero__tagline hero__tagline--other">Video Editor</div>
+        </div>
+      </div>
     </div>
   </section>
 
