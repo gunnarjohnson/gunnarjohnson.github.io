@@ -484,7 +484,7 @@ body {
 @media (min-width: 800px) {
 
 .about__title {
-      font-size: 3em
+      font-size: 3.5em
   }
   }
 
@@ -744,21 +744,57 @@ body {
 .skills {
 
   width: 100%;
-  height: 30em;
+  height: 100%;
   background-color: #a7c3d1;
   color: #111D23;
 }
 
+@media (min-width: 530px) {
+
+.skills {
+    height: 66.6%
+}
+  }
+
 .skills__title {
     font-family: Oswald, sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 700;
+    text-align: center;
+  }
+
+@media (min-width: 800px) {
+
+.skills__title {
+      font-size: 3.5em
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.skills__title {
+      font-size: 5em
+  }
   }
 
 .skills__content {
     font-family: Shadows Into Light, sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 400;
+  }
+
+@media (min-width: 800px) {
+
+.skills__content {
+      font-size: 1.75em
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.skills__content {
+      font-size: 2.25em
+  }
   }
 
 .wrapper--site-header {
@@ -863,7 +899,6 @@ body {
     grid-template-rows: [about-row-0] 2.5% [about-row-2_5] 20% [about-row-22_5] 2.5% [about-row-25] 72.5% [about-row-97_5] 2.5% [about-row-100];
     width: 100%;
     height: 100%;
-
   }
 
 .wrapper--about__title {
@@ -897,7 +932,63 @@ body {
   }
 
 .wrapper--skills {
+    display: grid;
+    grid-template-columns: [skills-col-0] 10% [skills-col-10] 35% [skills-col-45] 10% [skills-col-55] 35% [skills-col-90] 10% [skills-col-100];
+    grid-template-rows: [skills-row-0] 2.5% [skills-row-2_5] 12.5% [skills-row-15] 2.5% [skills-row-17_5] 40% [skills-row-57_5] 40% [skills-row-97_5] 2.5% [skills-row-100];
+    width: 100%;
+    height: 100%;
+  }
 
+.wrapper--skills__title {
+      grid-column: skills-col-10 / skills-col-90;
+      grid-row: skills-row-2_5 / skills-row-15;
+      justify-self: center;
+    }
+
+.wrapper--skills__content--left {
+        grid-column: skills-col-10 / skills-col-90;
+        grid-row: skills-row-17_5 / skills-row-57_5;
+        justify-self: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+      }
+
+@media (min-width: 530px) {
+
+.wrapper--skills__content--left {
+          grid-column: skills-col-10 / skills-col-45;
+          grid-row: skills-row-17_5 / skills-row-97_5;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center
+      }
+  }
+
+.wrapper--skills__content--right {
+        grid-column: skills-col-10 / skills-col-90;
+        grid-row: skills-row-57_5 / skills-row-97_5;
+        justify-self: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+      }
+
+@media (min-width: 530px) {
+
+.wrapper--skills__content--right {
+          grid-column: skills-col-55 / skills-col-90;
+          grid-row: skills-row-17_5 / skills-row-97_5;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center
+      }
   }
 
 .wrapper--portfolio {

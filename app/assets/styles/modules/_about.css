@@ -15,7 +15,7 @@
     text-align: center;
 
     @mixin atMedium {
-      font-size: 3em;
+      font-size: 3.5em;
     }
 
     @mixin atLarge {
