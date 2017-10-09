@@ -4,6 +4,8 @@
 
   }
 
+  /* Hero Section */
+
   &--hero {
     width: 100%;
     height: 100%;
@@ -15,10 +17,15 @@
       grid-column: col-0 / col-5;
       grid-row: row-0 / row-3;
       justify-self: center;
-      height: 100%;
+      position: relative;
       overflow: hidden;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
       border-bottom: 0.625em solid $blueLight;
       box-sizing: border-box;
+      opacity: 0.8;
+
 
       @mixin atSmall {
         grid-row: row-0 / row-5;
@@ -31,8 +38,8 @@
       grid-row: row-3 / row-5;
       justify-self: center;
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
       width: 100%;
       height: 100%;
@@ -60,6 +67,8 @@
       }
     }
   }
+
+  /* About Section */
 
   &--about {
     display: grid;
@@ -89,20 +98,42 @@
         grid-row: about-row-2_5 / about-row-97_5;
       }
     }
-
   }
+
+  /* Skills Section */
 
   &--skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
 
+    @mixin atSmall {
+      flex-direction: row;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
+
+  /* Portfolio Section */
 
   &--portfolio {
 
   }
 
+  /* Contact Section */
+
   &--contact {
 
   }
+
+  /* Footer Section */
 
   &--site-footer {
 

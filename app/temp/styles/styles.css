@@ -484,7 +484,7 @@ body {
 @media (min-width: 800px) {
 
 .about__title {
-      font-size: 3em
+      font-size: 3.5em
   }
   }
 
@@ -556,9 +556,10 @@ body {
   }
 
 .hero__image {
-    position: relative;
-    z-index: -1;
-    opacity: 0.8;
+    display: block;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
 .hero__name {
@@ -744,26 +745,72 @@ body {
 .skills {
 
   width: 100%;
-  height: 30em;
+  height: 150%;
   background-color: #a7c3d1;
   color: #111D23;
 }
 
+@media (min-width: 530px) {
+
+.skills {
+    height: 66.6%
+}
+  }
+
 .skills__title {
     font-family: Oswald, sans-serif;
-    font-size: 5em;
-    font-weight: 700;
+    font-size: 1.75em;
+    margin: 1em 0 0.5em 0;
+  }
+
+@media (min-width: 800px) {
+
+.skills__title {
+      font-size: 2.25em
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.skills__title {
+      font-size: 3em
+  }
   }
 
 .skills__content {
     font-family: Shadows Into Light, sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+@media (min-width: 530px) {
+
+.skills__content {
+      margin-bottom: 1em
+  }
+  }
+
+@media (min-width: 800px) {
+
+.skills__content {
+      font-size: 1.75em
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.skills__content {
+      font-size: 2.25em
+  }
   }
 
 .wrapper--site-header {
 
   }
+
+/* Hero Section */
 
 .wrapper--hero {
     width: 100%;
@@ -777,11 +824,15 @@ body {
       grid-column: col-0 / col-5;
       grid-row: row-0 / row-3;
       justify-self: center;
-      height: 100%;
+      position: relative;
       overflow: hidden;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
       border-bottom: 0.625em solid #25ABEC;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
+      opacity: 0.8;
     }
 
 @media (min-width: 530px) {
@@ -799,13 +850,13 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -857,13 +908,14 @@ body {
     }
   }
 
+/* About Section */
+
 .wrapper--about {
     display: grid;
     grid-template-columns: [about-col-0] 10% [about-col-10] 10% [about-col-20] 10% [about-col-30] 60% [about-col-90] 10% [about-col-100];
     grid-template-rows: [about-row-0] 2.5% [about-row-2_5] 20% [about-row-22_5] 2.5% [about-row-25] 72.5% [about-row-97_5] 2.5% [about-row-100];
     width: 100%;
     height: 100%;
-
   }
 
 .wrapper--about__title {
@@ -896,17 +948,62 @@ body {
     }
   }
 
-.wrapper--skills {
+/* Skills Section */
 
+.wrapper--skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
   }
+
+@media (min-width: 530px) {
+
+.wrapper--skills {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row
+  }
+  }
+
+.wrapper--skills__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+
+/* Portfolio Section */
 
 .wrapper--portfolio {
 
   }
 
+/* Contact Section */
+
 .wrapper--contact {
 
   }
+
+/* Footer Section */
 
 .wrapper--site-footer {
 
