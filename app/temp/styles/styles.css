@@ -556,9 +556,10 @@ body {
   }
 
 .hero__image {
-    position: relative;
-    z-index: -1;
-    opacity: 0.8;
+    display: block;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
 .hero__name {
@@ -744,7 +745,7 @@ body {
 .skills {
 
   width: 100%;
-  height: 100%;
+  height: 150%;
   background-color: #a7c3d1;
   color: #111D23;
 }
@@ -758,22 +759,21 @@ body {
 
 .skills__title {
     font-family: Oswald, sans-serif;
-    font-size: 3em;
-    font-weight: 700;
-    text-align: center;
+    font-size: 1.75em;
+    margin: 1em 0 0.5em 0;
   }
 
 @media (min-width: 800px) {
 
 .skills__title {
-      font-size: 3.5em
+      font-size: 2.25em
   }
   }
 
 @media (min-width: 1280px) {
 
 .skills__title {
-      font-size: 5em
+      font-size: 3em
   }
   }
 
@@ -781,6 +781,15 @@ body {
     font-family: Shadows Into Light, sans-serif;
     font-size: 1.5em;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+
+@media (min-width: 530px) {
+
+.skills__content {
+      margin-bottom: 1em
+  }
   }
 
 @media (min-width: 800px) {
@@ -801,6 +810,8 @@ body {
 
   }
 
+/* Hero Section */
+
 .wrapper--hero {
     width: 100%;
     height: 100%;
@@ -813,11 +824,15 @@ body {
       grid-column: col-0 / col-5;
       grid-row: row-0 / row-3;
       justify-self: center;
-      height: 100%;
+      position: relative;
       overflow: hidden;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
       border-bottom: 0.625em solid #25ABEC;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
+      opacity: 0.8;
     }
 
 @media (min-width: 530px) {
@@ -835,13 +850,13 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -893,6 +908,8 @@ body {
     }
   }
 
+/* About Section */
+
 .wrapper--about {
     display: grid;
     grid-template-columns: [about-col-0] 10% [about-col-10] 10% [about-col-20] 10% [about-col-30] 60% [about-col-90] 10% [about-col-100];
@@ -931,73 +948,62 @@ body {
     }
   }
 
+/* Skills Section */
+
 .wrapper--skills {
-    display: grid;
-    grid-template-columns: [skills-col-0] 10% [skills-col-10] 35% [skills-col-45] 10% [skills-col-55] 35% [skills-col-90] 10% [skills-col-100];
-    grid-template-rows: [skills-row-0] 2.5% [skills-row-2_5] 12.5% [skills-row-15] 2.5% [skills-row-17_5] 40% [skills-row-57_5] 40% [skills-row-97_5] 2.5% [skills-row-100];
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
     height: 100%;
   }
 
-.wrapper--skills__title {
-      grid-column: skills-col-10 / skills-col-90;
-      grid-row: skills-row-2_5 / skills-row-15;
-      justify-self: center;
+@media (min-width: 530px) {
+
+.wrapper--skills {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row
+  }
+  }
+
+.wrapper--skills__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
 
-.wrapper--skills__content--left {
-        grid-column: skills-col-10 / skills-col-90;
-        grid-row: skills-row-17_5 / skills-row-57_5;
-        justify-self: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-      }
-
-@media (min-width: 530px) {
-
-.wrapper--skills__content--left {
-          grid-column: skills-col-10 / skills-col-45;
-          grid-row: skills-row-17_5 / skills-row-97_5;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center
-      }
-  }
-
-.wrapper--skills__content--right {
-        grid-column: skills-col-10 / skills-col-90;
-        grid-row: skills-row-57_5 / skills-row-97_5;
-        justify-self: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-      }
-
-@media (min-width: 530px) {
-
-.wrapper--skills__content--right {
-          grid-column: skills-col-55 / skills-col-90;
-          grid-row: skills-row-17_5 / skills-row-97_5;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center
-      }
-  }
+/* Portfolio Section */
 
 .wrapper--portfolio {
 
   }
 
+/* Contact Section */
+
 .wrapper--contact {
 
   }
+
+/* Footer Section */
 
 .wrapper--site-footer {
 
