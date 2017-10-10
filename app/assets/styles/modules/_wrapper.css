@@ -125,6 +125,33 @@
 
   &--portfolio {
 
+    width: 100%;
+    height: 100%;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 5%;
+
+      @mixin atLarge {
+        height: 20%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 47.5%;
+
+      @mixin atLarge {
+        flex-direction: row;
+        height: 40%;
+      }
+    }
+
   }
 
   /* Contact Section */
