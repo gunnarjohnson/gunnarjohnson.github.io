@@ -521,7 +521,6 @@ a {
   }
 
 .contact {
-
   width: 100%;
   height: 25em;
   background-color: #2382B0;
@@ -658,7 +657,6 @@ a {
   }
 
 .portfolio {
-
   width: 100%;
   height: 400%;
   background-color: #25ABEC;
@@ -686,146 +684,113 @@ a {
     left: 0;
     width: 300px;
     height: 300px;
-    border: solid 1px #111D23;
     border-radius: 10px;
-    background-color: #111D23;
-    color: #a7c3d1;
-    font-family: Shadows Into Light, sans-serif;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    transition: -webkit-transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    -webkit-box-shadow: 0 1px 10px 2px #111D23;
+            box-shadow: 0 1px 10px 2px #111D23;
+    line-height: 35px;
   }
 
 @media (min-width: 530px) {
-      .portfolio__content:hover {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
-      }
+
+.portfolio__content {
+      -webkit-box-shadow: 0 1px 25px 2.5px #111D23;
+              box-shadow: 0 1px 25px 2.5px #111D23
+  }
   }
 
-.portfolio__content--title {
-      font-size: 2.5em;
-      margin: 0.5em 0 0 0;
-      text-align: center;
-    }
-
-.portfolio__content--description {
-      margin: 25px;
-      font-size: 1.75em;
-      font-weight: 400;
-    }
-
-.portfolio__content--1 {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out;
-    }
-
-.portfolio__content--1:hover {
-        opacity: 0.1;
+.portfolio__content:hover .portfolio__content--overlay {
+        opacity: 0.9;
       }
 
-.portfolio__content--2 {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out;
-    }
-
-.portfolio__content--2:hover {
-        opacity: 0.1;
+.portfolio__content:hover .portfolio__content--text {
+        opacity: 1;
       }
 
-.portfolio__content--3 {
+.portfolio__content--image {
       position: absolute;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
+      border: solid 1px #111D23;
       border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
     }
 
-.portfolio__content--3:hover {
-        opacity: 0.1;
+.portfolio__content--image__1 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
       }
 
-.portfolio__content--4 {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out;
-    }
-
-.portfolio__content--4:hover {
-        opacity: 0.1;
+.portfolio__content--image__2 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
       }
 
-.portfolio__content--5 {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out;
-    }
-
-.portfolio__content--5:hover {
-        opacity: 0.1;
+.portfolio__content--image__3 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
       }
 
-.portfolio__content--6 {
+.portfolio__content--image__4 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+.portfolio__content--image__5 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+.portfolio__content--image__6 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+.portfolio__content--overlay {
       position: absolute;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
       border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      -webkit-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out;
+      background-color: #111D23;
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
     }
 
-.portfolio__content--6:hover {
-        opacity: 0.1;
+.portfolio__content--text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      background-color: transparent;
+      color: #a7c3d1;
+      font-family: Shadows Into Light, sans-serif;
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+.portfolio__content--text__title {
+        margin: 0.5em 0 0.25em 0;
+        font-size: 2.5em;
+        text-align: center;
+      }
+
+.portfolio__content--text__description {
+        margin: 0.25em 1em 0.5em 1em;
+        font-size: 1.75em;
+        font-weight: 400;
       }
 
 .site-footer {
-
   width: 100%;
   height: 5em;
   background-color: #a7c3d1;

@@ -1,5 +1,4 @@
 .portfolio {
-
   width: 100%;
   height: 400%;
   background-color: $blueLight;
@@ -23,124 +22,100 @@
     left: 0;
     width: 300px;
     height: 300px;
-    border: solid 1px $grayDark;
     border-radius: 10px;
-    background-color: $grayDark;
-    color: $grayLight;
-    font-family: Shadows Into Light, sans-serif;
-    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 1px 10px 2px $grayDark;
+    line-height: 35px;
 
     @mixin atSmall {
-      &:hover {
-        transform: scale(1.1);
+      box-shadow: 0 1px 25px 2.5px $grayDark;
+    }
+
+    &:hover {
+
+      & .portfolio__content--overlay {
+        opacity: 0.9;
+      }
+
+      & .portfolio__content--text {
+        opacity: 1;
       }
     }
 
-    &--title {
-      font-size: 2.5em;
-      margin: 0.5em 0 0 0;
-      text-align: center;
-    }
-
-    &--description {
-      margin: 25px;
-      font-size: 1.75em;
-      font-weight: 400;
-    }
-
-    &--1 {
+    &--image {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
+      border: solid 1px $grayDark;
       border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
+      box-sizing: border-box;
 
-      &:hover {
-        opacity: 0.1;
+
+      &__1 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+      &__2 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+      &__3 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+      &__4 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+      &__5 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+      }
+
+      &__6 {
+        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
       }
     }
 
-    &--2 {
+    &--overlay {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
       border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
-
-      &:hover {
-        opacity: 0.1;
-      }
+      background-color: $grayDark;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
     }
 
-    &--3 {
+    &--text {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
       border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
+      box-sizing: border-box;
+      background-color: transparent;
+      color: $grayLight;
+      font-family: Shadows Into Light, sans-serif;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
 
-      &:hover {
-        opacity: 0.1;
+      &__title {
+        margin: 0.5em 0 0.25em 0;
+        font-size: 2.5em;
+        text-align: center;
       }
-    }
 
-    &--4 {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
-
-      &:hover {
-        opacity: 0.1;
-      }
-    }
-
-    &--5 {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
-
-      &:hover {
-        opacity: 0.1;
-      }
-    }
-
-    &--6 {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
-
-      &:hover {
-        opacity: 0.1;
+      &__description {
+        margin: 0.25em 1em 0.5em 1em;
+        font-size: 1.75em;
+        font-weight: 400;
       }
     }
   }
