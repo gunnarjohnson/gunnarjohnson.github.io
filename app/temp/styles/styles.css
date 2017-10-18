@@ -569,14 +569,14 @@ a {
 @media (min-width: 530px) {
 
 .contact__content {
-      font-size: 3em
+      font-size: 2.5em
   }
   }
 
 @media (min-width: 800px) {
 
 .contact__content {
-      font-size: 2.5em
+      font-size: 3em
   }
   }
 
@@ -840,30 +840,22 @@ a {
 
 .site-footer {
   width: 100%;
-  height: 5em;
+  height: 15%;
   background-color: #a7c3d1;
   color: #111D23;
 }
 
-.site-footer__icon-container {
+@media (min-width: 1280px) {
 
+.site-footer {
+    height: 10%
+}
   }
 
-.site-footer__icon--1 {
-
-    }
-
-.site-footer__icon--2 {
-
-    }
-
-.site-footer__icon--3 {
-
-    }
-
-.site-footer__icon--4 {
-
-    }
+.site-footer__icon {
+    width: 64px;
+    height: 64px;
+  }
 
 .site-header {
   display: none;
@@ -1238,5 +1230,41 @@ a {
 /* Footer Section */
 
 .wrapper--site-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 
+.wrapper--site-footer__icon-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 75%;
+    }
+
+@media (min-width: 530px) {
+
+.wrapper--site-footer__icon-container {
+        width: 50%
+    }
+  }
+
+@media (min-width: 800px) {
+
+.wrapper--site-footer__icon-container {
+        width: 25%
+    }
   }
