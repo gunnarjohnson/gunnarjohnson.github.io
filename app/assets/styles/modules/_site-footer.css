@@ -1,29 +1,15 @@
 .site-footer {
   width: 100%;
-  height: 5em;
+  height: 15%;
   background-color: $grayLight;
   color: $grayDark;
 
-  &__icon-container {
-
+  @mixin atLarge {
+    height: 10%;
   }
 
   &__icon {
-
-    &--1 {
-
-    }
-
-    &--2 {
-
-    }
-
-    &--3 {
-
-    }
-
-    &--4 {
-
-    }
+    width: 64px;
+    height: 64px;
   }
 }
