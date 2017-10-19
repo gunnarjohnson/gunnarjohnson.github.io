@@ -28,5 +28,8 @@
     "postcss-nested": "^2.1.2",
     "postcss-simple-vars": "^4.1.0",
     "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "clipboard": "^1.7.1"
   }
 }

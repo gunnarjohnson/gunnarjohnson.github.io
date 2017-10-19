@@ -1,7 +1,20 @@
 .wrapper {
 
   &--site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 
+    &__navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 40%;
+    }
   }
 
   /* Hero Section */
@@ -163,25 +176,27 @@
     width: 100%;
     height: 100%;
 
-    &__box {
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+    }
+
+    &__content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 80%;
-      height: 70%;
-      background: rgba(12, 29, 38, 0.6);
-      border: 1em solid $grayDark;
-      border-radius: 10px;
-      box-sizing: border-box;
+      width: 50%;
+      height: 100%;
+    }
 
-      @mixin atMedium {
-        width: 70%;
-      }
-
-      @mixin atLarge {
-        width: 50%;
-      }
+    &__icon-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
   }
 
