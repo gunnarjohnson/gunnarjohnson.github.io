@@ -1,0 +1,11 @@
+.nav {
+
+  &--open {
+    width: 87.5% !important;
+    margin-left: 12.5% !important;
+  }
+
+  &--transition {
+    transition: width 0.2s ease-in-out, margin 0.2s ease-in-out;
+  }
+}

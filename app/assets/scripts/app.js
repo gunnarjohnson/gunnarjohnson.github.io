@@ -1,3 +1,6 @@
+var $ = require('jquery');
+var Nav = require('./modules/nav');
+
 // Copies e-mail address to the clipboard when corresponding icon is clicked
 var emailAddress = document.getElementById('copyEmail');
 var clipboard = new Clipboard(emailAddress);

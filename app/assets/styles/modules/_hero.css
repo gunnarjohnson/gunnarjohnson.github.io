@@ -12,16 +12,6 @@
     border-bottom: 1.25em solid $blueLight;
   }
 
-  @mixin atMedium {
-    width: 82.5%;
-    margin-left: 17.5%;
-  }
-
-  @mixin atLarge {
-    width: 87.5%;
-    margin-left: 12.5%;
-  }
-
   &__image {
     display: block;
     max-width: 100%;

@@ -15,18 +15,23 @@
 
   <!-- Header -->
   <header class="site-header">
-    <div class="wrapper--site-header">
-      <nav class="wrapper--site-header__navigation">
-        <a class="site-header__nav-item" href="#hero-section">About</a>
-        <a class="site-header__nav-item" href="#skills-section">Skills</a>
-        <a class="site-header__nav-item" href="#portfolio-section">Portfolio</a>
-        <a class="site-header__nav-item" href="#contact-section">Contact</a>
-      </nav>
+    <div id="open-button" class="site-header__open-button">&#9776;</div>
+    <div id="site-navigation" class="site-header__navigation">
+      <div class="wrapper--site-header__navigation">
+        <nav class="wrapper--site-header__nav-items">
+          <a id="close-button" class="site-header__close-button" href="javascript:void(0)" >&times;</a>
+          <a class="site-header__nav-item" href="#hero-section">Home</a>
+          <a class="site-header__nav-item" href="#about-section">About</a>
+          <a class="site-header__nav-item" href="#skills-section">Skills</a>
+          <a class="site-header__nav-item" href="#portfolio-section">Portfolio</a>
+          <a class="site-header__nav-item" href="#contact-section">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero-section" class="hero">
+  <section id="hero-section" class="hero nav--transition">
     <div class="wrapper--hero">
       <div class="wrapper--hero__image">
         <picture>
@@ -48,7 +53,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about-section" class="about">
+  <section id="about-section" class="about nav--transition">
     <div class="wrapper--about">
       <div class="wrapper--about__title">
         <h2 class="about__title">About</h2>
@@ -60,7 +65,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills-section" class="skills">
+  <section id="skills-section" class="skills nav--transition">
     <div class="wrapper--skills">
       <div class="wrapper--skills__content">
         <h3 class="skills__title">Skills 1</h3>
@@ -96,7 +101,7 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio-section" class="portfolio">
+  <section id="portfolio-section" class="portfolio nav--transition">
     <div class="wrapper--portfolio">
       <div class="wrapper--portfolio__title">
         <h2 class="portfolio__title">Portfolio</h2>
@@ -165,7 +170,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact-section" class="contact">
+  <section id="contact-section" class="contact nav--transition">
     <div class="wrapper--contact">
       <div class="wrapper--contact__title">
         <h2 class="contact__title">Contact</h2>
@@ -183,7 +188,7 @@
   </section>
 
   <!-- Footer -->
-  <footer id="footer" class="site-footer">
+  <footer id="footer" class="site-footer nav--transition">
     <div class="wrapper--site-footer">
       <div class="wrapper--site-footer__icon-container">
         <!-- Icon: Facebook -->
@@ -195,15 +200,16 @@
           <img src="assets/images/icon-github__64w.png">
         </a>
         <!-- Icon: LinkedIn -->
-          <a class="site-footer__icon" href="https://www.linkedin.com/in/gunnarmjohnson" target="_blank">
+        <a class="site-footer__icon" href="https://www.linkedin.com/in/gunnarmjohnson" target="_blank">
           <img src="assets/images/icon-linkedin__64w.png">
         </a>
       </div>
+      <p class="site-footer__copyright">© 2017 Gunnar Johnson</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
-  <script src="assets/scripts/app.js"></script>
+  <script src="temp/scripts/app.js"></script>
 
 </body>
 
