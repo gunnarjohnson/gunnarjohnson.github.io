@@ -4,6 +4,7 @@
   background-color: $blueMedium;
   color: #FFFFFF;
 
+
   @mixin atSmall {
     height: 33.4%;
   }
