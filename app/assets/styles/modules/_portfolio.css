@@ -4,7 +4,15 @@
   background-color: $blueLight;
   color: $blueDark;
 
+  @mixin atMedSmall {
+    height: 150%;
+  }
+
   @mixin atLarge {
+    height: 125%;
+  }
+
+  @mixin atLargest {
     height: 100%;
   }
 
@@ -26,7 +34,7 @@
     box-shadow: 0 1px 10px 2px $grayDark;
     line-height: 35px;
 
-    @mixin atSmall {
+    @mixin atMedSmall {
       box-shadow: 0 1px 25px 2.5px $grayDark;
     }
 

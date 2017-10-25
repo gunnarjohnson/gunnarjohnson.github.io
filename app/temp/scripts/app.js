@@ -10329,17 +10329,8 @@ return jQuery;
 
 var $ = __webpack_require__(0);
 var Nav = __webpack_require__(2);
-
-// Copies e-mail address to the clipboard when corresponding icon is clicked
-var emailAddress = document.getElementById('copyEmail');
-var clipboard = new Clipboard(emailAddress);
-clipboard.on('success', function(e) {
-  console.log(e);
-  alert('Copied "' + e.text + '" to the clipboard.');
-});
-clipboard.on('error', function(e) {
-  console.log(e);
-});
+var SmoothScroll = __webpack_require__(3);
+var copyEmail = __webpack_require__(4);
 
 
 /***/ }),
@@ -10349,7 +10340,7 @@ clipboard.on('error', function(e) {
 var $ = __webpack_require__(0);
 var navOpen;
 
-// Opens navigation
+// Open navigation
 function openNav() {
   // Site Navigation
   $("#site-navigation").addClass("site-header__navigation--open");
@@ -10382,7 +10373,7 @@ function openNav() {
   navOpen = true;
 }
 
-// Closes navigation
+// Close navigation
 function closeNav() {
   // Site navigation
   $("#site-navigation").removeClass("site-header__navigation--open");
@@ -10415,7 +10406,7 @@ function closeNav() {
   navOpen = false;
 }
 
-// Checks window width and closes navigation if width is below 800 (sizing a bit off hence the value of 783)
+// Check window width and close navigation if width is below 800 (window width is slightly inaccurate hence the value of 783)
 function screenClass() {
   if($(window).innerWidth() < 783) {
     if (navOpen == true) {
@@ -10424,19 +10415,85 @@ function screenClass() {
   }
 }
 
-// screenClass() runs when window is resized
+// Run when window is resized
 $(window).bind('resize',function() {
     screenClass();
 });
 
-// screenClass() runs on page load
+// Run on page load
 screenClass();
 
-// If open button is clicked, openNav() runs
+// If open button is clicked, run openNav()
 $("#open-button").click(openNav);
 
-// If close button is clicked, closeNav() runs
+// If close button is clicked, run closeNav()
 $("#close-button").click(closeNav);
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(0);
+
+// Smooth Scroll with jQuery (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 650, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+// Copy e-mail address to the clipboard when corresponding icon is clicked
+var emailAddress = document.getElementById('copyEmail');
+var clipboard = new Clipboard(emailAddress);
+clipboard.on('success', function(e) {
+  console.log(e);
+  // Notify user that e-mail address has been copied to clipboard
+  (function($){
+    $(function(){
+  	   $.jGrowl('Copied "' + e.text + '" to the Clipboard.');
+  	});
+  })(jQuery);
+});
+clipboard.on('error', function(e) {
+  console.log(e);
+});
 
 
 /***/ })

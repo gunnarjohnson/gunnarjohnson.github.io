@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,100,200,500,600,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.2.12/jquery.jgrowl.min.css" />
   <title>Gunnar Johnson</title>
 
   <link rel="stylesheet" href="temp/styles/styles.css">
@@ -106,65 +108,70 @@
       <div class="wrapper--portfolio__title">
         <h2 class="portfolio__title">Portfolio</h2>
       </div>
-      <!-- Portfolio Items (Top) -->
       <div class="wrapper--portfolio__content">
-        <!-- Portfolio Item #1 (Left) -->
-        <a class="portfolio__content" href="#" target="_blank">
-          <div class="portfolio__content--image portfolio__content--image__1"></div>
-          <div class="portfolio__content--overlay"></div>
-          <div class="portfolio__content--text">
-            <h4 class="portfolio__content--text__title">Example 1</h4>
-            <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </a>
-        <!-- Portfolio Item #2 (Center) -->
-        <a class="portfolio__content" href="#" target="_blank">
-          <div class="portfolio__content--image portfolio__content--image__2"></div>
-          <div class="portfolio__content--overlay"></div>
-          <div class="portfolio__content--text">
-            <h4 class="portfolio__content--text__title">Example 2</h4>
-            <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </a>
-        <!-- Portfolio Item #3 (Right) -->
-        <a class="portfolio__content" href="#" target="_blank">
-          <div class="portfolio__content--image portfolio__content--image__3"></div>
-          <div class="portfolio__content--overlay"></div>
-          <div class="portfolio__content--text">
-            <h4 class="portfolio__content--text__title">Example 3</h4>
-            <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </a>
-      </div>
-      <!-- Portfolio Items (Bottom) -->
-      <div class="wrapper--portfolio__content">
-        <!-- Portfolio Item #4 (Left) -->
-        <a class="portfolio__content" href="#" target="_blank">
-          <div class="portfolio__content--image portfolio__content--image__4"></div>
-          <div class="portfolio__content--overlay"></div>
-          <div class="portfolio__content--text">
-            <h4 class="portfolio__content--text__title">Example 4</h4>
-            <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </a>
-        <!-- Portfolio Item #5 (Center) -->
-        <a class="portfolio__content" href="#" target="_blank">
-          <div class="portfolio__content--image portfolio__content--image__5"></div>
-          <div class="portfolio__content--overlay"></div>
-          <div class="portfolio__content--text">
-            <h4 class="portfolio__content--text__title">Example 5</h4>
-            <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </a>
-        <!-- Portfolio Item #6 (Right) -->
-        <a class="portfolio__content" href="#" target="_blank">
-          <div class="portfolio__content--image portfolio__content--image__6"></div>
-          <div class="portfolio__content--overlay"></div>
-          <div class="portfolio__content--text">
-            <h4 class="portfolio__content--text__title">Example 6</h4>
-            <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </a>
+        <!-- Portfolio Items: 1st Pair -->
+        <div class="wrapper--portfolio__content-pair">
+          <!-- Portfolio Item #1 -->
+          <a class="portfolio__content" href="#" target="_blank">
+            <div class="portfolio__content--image portfolio__content--image__1"></div>
+            <div class="portfolio__content--overlay"></div>
+            <div class="portfolio__content--text">
+              <h4 class="portfolio__content--text__title">Example 1</h4>
+              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </a>
+          <!-- Portfolio Item #2 -->
+          <a class="portfolio__content" href="#" target="_blank">
+            <div class="portfolio__content--image portfolio__content--image__2"></div>
+            <div class="portfolio__content--overlay"></div>
+            <div class="portfolio__content--text">
+              <h4 class="portfolio__content--text__title">Example 2</h4>
+              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Portfolio Items: 2nd Pair -->
+        <div class="wrapper--portfolio__content-pair">
+          <!-- Portfolio Item #3 -->
+          <a class="portfolio__content" href="#" target="_blank">
+            <div class="portfolio__content--image portfolio__content--image__3"></div>
+            <div class="portfolio__content--overlay"></div>
+            <div class="portfolio__content--text">
+              <h4 class="portfolio__content--text__title">Example 3</h4>
+              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </a>
+          <!-- Portfolio Item #4 -->
+          <a class="portfolio__content" href="#" target="_blank">
+            <div class="portfolio__content--image portfolio__content--image__4"></div>
+            <div class="portfolio__content--overlay"></div>
+            <div class="portfolio__content--text">
+              <h4 class="portfolio__content--text__title">Example 4</h4>
+              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Portfolio Items: 3rd Pair -->
+        <div class="wrapper--portfolio__content-pair">
+          <!-- Portfolio Item #5 -->
+          <a class="portfolio__content" href="#" target="_blank">
+            <div class="portfolio__content--image portfolio__content--image__5"></div>
+            <div class="portfolio__content--overlay"></div>
+            <div class="portfolio__content--text">
+              <h4 class="portfolio__content--text__title">Example 5</h4>
+              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </a>
+          <!-- Portfolio Item #6 -->
+          <a class="portfolio__content" href="#" target="_blank">
+            <div class="portfolio__content--image portfolio__content--image__6"></div>
+            <div class="portfolio__content--overlay"></div>
+            <div class="portfolio__content--text">
+              <h4 class="portfolio__content--text__title">Example 6</h4>
+              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -209,6 +216,8 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.2.12/jquery.jgrowl.min.js"></script>
   <script src="temp/scripts/app.js"></script>
 
 </body>
