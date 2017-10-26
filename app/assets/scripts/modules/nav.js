@@ -1,7 +1,7 @@
 var $ = require('jquery');
 var navOpen;
 
-// Opens navigation
+// Open navigation
 function openNav() {
   // Site Navigation
   $("#site-navigation").addClass("site-header__navigation--open");
@@ -34,7 +34,7 @@ function openNav() {
   navOpen = true;
 }
 
-// Closes navigation
+// Close navigation
 function closeNav() {
   // Site navigation
   $("#site-navigation").removeClass("site-header__navigation--open");
@@ -67,7 +67,7 @@ function closeNav() {
   navOpen = false;
 }
 
-// Checks window width and closes navigation if width is below 800 (sizing a bit off hence the value of 783)
+// Check window width and close navigation if width is below 800 (window width is slightly inaccurate hence the value of 783)
 function screenClass() {
   if($(window).innerWidth() < 783) {
     if (navOpen == true) {
@@ -76,16 +76,16 @@ function screenClass() {
   }
 }
 
-// screenClass() runs when window is resized
+// Run when window is resized
 $(window).bind('resize',function() {
     screenClass();
 });
 
-// screenClass() runs on page load
+// Run on page load
 screenClass();
 
-// If open button is clicked, openNav() runs
+// If open button is clicked, run openNav()
 $("#open-button").click(openNav);
 
-// If close button is clicked, closeNav() runs
+// If close button is clicked, run closeNav()
 $("#close-button").click(closeNav);

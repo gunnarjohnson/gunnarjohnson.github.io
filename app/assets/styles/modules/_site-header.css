@@ -8,11 +8,15 @@
     top: 10px;
     left: 20px;
     color: #FFFFFF;
-    font-size: 4em;
+    font-size: 3em;
     cursor: pointer;
 
     @mixin atMedium {
       display: block;
+    }
+
+    @mixin atLarge {
+      font-size: 4em;
     }
   }
 
