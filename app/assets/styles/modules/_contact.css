@@ -3,6 +3,7 @@
   height: 35%;
   background-color: $blueMedium;
   color: #FFFFFF;
+  outline: none;
 
   &__title {
     margin: 0.5%;

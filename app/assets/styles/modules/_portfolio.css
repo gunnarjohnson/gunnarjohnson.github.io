@@ -1,8 +1,9 @@
 .portfolio {
   width: 100%;
   height: 400%;
-  background-color: $blueLight;
+  background-color: $grayWhite;
   color: $blueDark;
+  outline: none;
 
   @mixin atMedSmall {
     height: 150%;
@@ -62,27 +63,27 @@
 
 
       &__1 {
-        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
       }
 
       &__2 {
-        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+        background-image: url("../../assets/images/portfolio-image__300w--calculator.png");
       }
 
       &__3 {
-        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+        background-image: url("../../assets/images/portfolio-image__300w--twitch-streamers.png");
       }
 
       &__4 {
-        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+        background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
       }
 
       &__5 {
-        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+        background-image: url("../../assets/images/portfolio-image__300w--local-weather.png");
       }
 
       &__6 {
-        background-image: url("../../assets/images/portfolio-image__300w--placeholder.png");
+        background-image: url("../../assets/images/portfolio-image__300w--deep-thoughts.png");
       }
     }
 
@@ -110,18 +111,19 @@
       box-sizing: border-box;
       background-color: transparent;
       color: $grayLight;
-      font-family: Shadows Into Light, sans-serif;
       opacity: 0;
       transition: all 0.2s ease-in-out;
 
       &__title {
         margin: 0.5em 0 0.25em 0;
+        font-family: Josefin Sans, sans-serif;
         font-size: 2.5em;
         text-align: center;
       }
 
       &__description {
         margin: 0.25em 1em 0.5em 1em;
+        font-family: Shadows Into Light, sans-serif;
         font-size: 1.75em;
         font-weight: 400;
       }

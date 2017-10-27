@@ -6,6 +6,7 @@
   background-color: $grayDark;
   color: #FFFFFF;
   box-sizing: border-box;
+  outline: none;
 
   @mixin atSmall {
     height: 66.6%;
