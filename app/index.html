@@ -17,6 +17,7 @@
 
   <!-- Header -->
   <header class="site-header">
+    <!-- Navigation -->
     <div id="open-button" class="site-header__open-button">&#9776;</div>
     <div id="site-navigation" class="site-header__navigation">
       <div class="wrapper--site-header__navigation">
@@ -57,17 +58,16 @@
   <!-- About Section -->
   <section id="about-section" class="about nav--transition">
     <div class="wrapper--about">
-      <div class="wrapper--about__title">
-        <h2 class="about__title">About</h2>
-      </div>
       <div class="wrapper--about__content">
-        <p class="about__content">
-          LOREM IPSUM DOLOR SIT AMET, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          <br><br>
-          LOREM IPSUM DOLOR SIT AMET, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          <br><br>
-          LOREM IPSUM DOLOR SIT AMET, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2 class="about__title">About</h2>
+        <div class="wrapper--about__content-items">
+          <p class="about__content">
+            LOREM IPSUM DOLOR SIT AMET, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p class="about__content about__content--below">
+            LOREM IPSUM DOLOR SIT AMET, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -149,6 +149,10 @@
   <!-- Skills Section -->
   <section id="skills-section" class="skills nav--transition">
     <div class="wrapper--skills">
+      <!-- Line: Left -->
+      <div class="wrapper--skills__line wrapper--skills__line--left">
+        <div class="skills__line"></div>
+      </div>
       <!-- Top Content -->
       <div class="wrapper--skills__content wrapper--skills__content--first">
         <!-- Skills -->
@@ -157,9 +161,7 @@
           <ul class="skills__content">
             <li>Front-End Architecture</li>
             <li>Responsive Web Design</li>
-            <li>Semantic Markup
-              <p class="skills__content--info">BEM</p>
-            </li>
+            <li>Semantic Markup</li>
             <li>UX Principles</li>
             <li>Version Control</li>
           </ul>
@@ -169,26 +171,18 @@
           <h3 class="skills__title">Languages</h3>
           <ul class="skills__content">
             <li>CSS5
-              <p class="skills__content--info">Autoprefixer, PostCSS, Sass</p>
+              <p class="skills__content--info">Autoprefixer, BEM, PostCSS, Sass</p>
             </li>
             <li>HTML5</li>
             <li>JavaScript
               <p class="skills__content--info">ES6</p>
             </li>
-            <li>Python</li>
-            <li>Ruby
-              <p class="skills__content--info">Ruby on Rails</p>
-            </li>
           </ul>
         </div>
       </div>
-      <!-- Vertical Line -->
-      <div class="wrapper--skills__line wrapper--skills__line--vertical">
-        <div class="skills__line skills__line--vertical"></div>
-      </div>
-      <!-- Horizontal Line -->
-      <div class="wrapper--skills__line wrapper--skills__line--horizontal">
-        <div class="skills__line skills__line--horizontal"></div>
+      <!-- Line: Center -->
+      <div class="wrapper--skills__line wrapper--skills__line--center">
+        <div class="skills__line"></div>
       </div>
       <!-- Bottom Content -->
       <div class="wrapper--skills__content wrapper--skills__content--second">
@@ -200,13 +194,13 @@
               <p class="skills__content--info">Wordpress</p>
             </li>
             <li>FWKs
-              <p class="skills__content--info">AngularJS, Bootstrap</p>
+              <p class="skills__content--info">Bootstrap</p>
             </li>
             <li>Git
               <p class="skills__content--info">Bash, GitHub, GitKraken</p>
             </li>
             <li>Libs
-              <p class="skills__content--info">jQuery, React</p>
+              <p class="skills__content--info">jQuery</p>
             </li>
             <li>NPM
               <p class="skills__content--info">Gulp, Webpack</p>
@@ -225,9 +219,6 @@
               <p class="skills__content--info">Vtiger</p>
             </li>
           -->
-            <li>FTP
-              <p class="skills__content--info">Fetch, FileZilla</p>
-            </li>
             <li>Graphics
               <p class="skills__content--info">Illustrator, Photoshop</p>
             </li>
@@ -236,14 +227,15 @@
               <p class="skills__content--info">AIMsi, QuickBooks POS, Vend</p>
             </li>
           -->
-            <li>OS
-              <p class="skills__content--info">macOS, Windows XP/7/10</p>
-            </li>
             <li>Video
               <p class="skills__content--info">After Effects, Final Cut Pro, Premiere Pro</p>
             </li>
           </ul>
         </div>
+      </div>
+      <!-- Line: Right -->
+      <div class="wrapper--skills__line wrapper--skills__line--right">
+        <div class="skills__line"></div>
       </div>
     </div>
   </section>
@@ -255,12 +247,12 @@
         <h2 class="contact__title">Contact</h2>
       </div>
       <div class="wrapper--contact__content">
-        <p class="contact__email" type="text">gunnarmjohnson@gmail.com</p>
+        <p class="contact__email" type="text">gunnar@tonedev.com</p>
         <div class="wrapper--contact__icon-container">
-          <a class="contact__icon" href="mailto:gunnarmjohnson@gmail.com">
+          <a class="contact__icon" href="mailto:gunnar@tonedev.com">
             <img src="assets/images/icon-email__64w.png">
           </a>
-          <img id="copyEmail" class="contact__icon" src="assets/images/icon-copy__64w.png" data-clipboard-text="gunnarmjohnson@gmail.com">
+          <img id="copyEmail" class="contact__icon" src="assets/images/icon-copy__64w.png" data-clipboard-text="gunnar@tonedev.com">
         </div>
       </div>
     </div>

@@ -5,7 +5,6 @@
   color: #FFFFFF;
   outline: none;
 
-
   @mixin atSmall {
     height: 33.4%;
   }
@@ -15,8 +14,8 @@
     font-size: 3em;
     font-weight: 700;
 
-    @mixin atMedium {
-      font-size: 3.5em;
+    @mixin atSmall {
+      font-size: 4em;
       line-height: 0.8em;
     }
 
@@ -31,11 +30,20 @@
     font-weight: 400;
 
     @mixin atMedium {
+      width: auto;
       font-size: 1.75em;
     }
 
-    @mixin atLarge {
+    @mixin atLargest {
       font-size: 2em;
+    }
+
+    &--below {
+      margin-top: 0.5em;
+
+      @mixin atSmall {
+        margin-top: 1em;
+      }
     }
   }
 }
