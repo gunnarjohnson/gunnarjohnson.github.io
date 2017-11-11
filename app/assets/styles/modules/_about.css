@@ -25,6 +25,7 @@
   }
 
   &__content {
+    display: inline;
     font-family: Josefin Sans, sans-serif;
     font-size: 1.6em;
     font-weight: 400;
@@ -38,11 +39,30 @@
       font-size: 2em;
     }
 
-    &--below {
-      margin-top: 0.5em;
+    &-below {
+      width: 100%;
 
-      @mixin atSmall {
-        margin-top: 1em;
+      &--contact {
+        display: inline;
+        word-spacing: -0.25em;
+
+        &:hover .about__content-below--underline {
+          color: $grayDark;
+        }
+
+        &:hover .about__content-below--punctuation {
+          color: $grayDark;
+        }
+      }
+
+      &--underline {
+        text-decoration: underline;
+        word-spacing: normal;
+        transition: color 0.2s ease-in-out;
+      }
+
+      &--punctuation {
+        transition: color 0.2s ease-in-out;
       }
     }
   }
