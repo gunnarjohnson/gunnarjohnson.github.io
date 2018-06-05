@@ -29,14 +29,18 @@
   /* Hero Section */
 
   &--hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: [col-0] 20% [col-1] 20% [col-2] 20% [col-3] 20% [col-4] 20% [col-5];
-    grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5];
+    grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5]; */
 
     &__image {
-      grid-column: col-0 / col-5;
+      display: none;
+      /* grid-column: col-0 / col-5;
       grid-row: row-0 / row-3;
       display: flex;
       justify-content: center;
@@ -47,7 +51,7 @@
       height: 100%;
       border-bottom: 0.625em solid $blueLight;
       box-sizing: border-box;
-      opacity: 0.8;
+      opacity: 0.8; */
 
       @mixin atSmall {
         grid-row: row-0 / row-5;
@@ -56,7 +60,8 @@
     }
 
     &__info {
-      grid-column: col-0 / col-5;
+      display: block;
+      /* grid-column: col-0 / col-5;
       grid-row: row-3 / row-5;
       justify-self: center;
       display: flex;
@@ -64,13 +69,13 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 100%;
-      border-bottom: 0.625em solid $blueLight;
+      height: 100%; */
+      /* border-bottom: 0.625em solid $blueLight;
       box-sizing: border-box;
 
       @mixin atSmall {
         border-bottom: none;
-      }
+      } */
 
       @mixin atMedium {
         grid-column: col-2 / col-5;
@@ -129,10 +134,10 @@
       }
 
       &-below {
-        margin-top: 0.5em;
-    
+        margin-top: 1em;
+
         @mixin atSmall {
-          margin-top: 1em;
+          margin-top: 2em;
         }
       }
     }
@@ -169,16 +174,20 @@
       width: 100%;
       height: 95%;
 
+
       @mixin atMedSmall {
         height: 92.5%;
+        min-height: 1000px;
       }
 
       @mixin atLarge {
         height: 90%;
+        min-height: 800px;
       }
 
       @mixin atLargest {
         height: 87.5%;
+        min-height: 700px;
       }
 
       &-pair {
@@ -205,41 +214,52 @@
   /* Skills Section */
 
   &--skills {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* display: grid;
     grid-template-columns: [skills-col-0] 50% [skills-col-50] 50% [skills-col-100];
-    grid-template-rows: [skills-row-0] 50% [skills-row-50] 50% [skills-row-100];
+    grid-template-rows: [skills-row-0] 50% [skills-row-50] 50% [skills-row-100]; */
     width: 100%;
     height: 100%;
+
+    @mixin atSmall {
+      flex-wrap: nowrap;
+    }
 
     &__content {
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: space-around;
+      width: 100%;
 
       @mixin atSmall {
         justify-content: space-evenly;
+        width: 46.25%;
       }
 
       &--first {
-        grid-column: skills-col-0 / skills-col-100;
+        /* grid-column: skills-col-0 / skills-col-100;
         grid-row: skills-row-0 / skills-row-50;
-        width: 100%;
+        width: 100%; */
 
         @mixin atSmall {
-          grid-column: skills-col-0 / skills-col-50;
-          grid-row: skills-row-0 / skills-row-100;
+          margin: 0 1.25% 0 2.5%;
+          /* grid-column: skills-col-0 / skills-col-50;
+          grid-row: skills-row-0 / skills-row-100; */
         }
       }
 
       &--second {
-        grid-column: skills-col-0 / skills-col-100;
+        /* grid-column: skills-col-0 / skills-col-100;
         grid-row: skills-row-50 / skills-row-100;
-        width: 100%;
+        width: 100%; */
 
         @mixin atSmall {
-          grid-column: skills-col-50 / skills-col-100;
-          grid-row: skills-row-0 / skills-row-100;
+          margin: 0 2.5% 0 1.25%;
+          /* grid-column: skills-col-50 / skills-col-100;
+          grid-row: skills-row-0 / skills-row-100; */
         }
       }
 
@@ -249,16 +269,20 @@
         padding-left: 0;
 
         @mixin atMedium {
-          padding-left: 10%
+          padding-left: 10%;
         }
       }
     }
 
     &__line {
-      grid-column: skills-col-0 / skills-col-100;
-      grid-row: skills-row-0 / skills-row-100;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      /* grid-column: skills-col-0 / skills-col-100;
+      grid-row: skills-row-0 / skills-row-100; */
 
       &--left {
+        left: 0;
         justify-self: start;
         width: 3px;
         margin: 2.5%;
@@ -266,9 +290,12 @@
 
       &--center {
         display: none;
-        justify-self: center;
+        left: 0;
+        right: 0;
+        /* justify-self: center; */
         width: 3px;
-        margin: 2.5%;
+        /* margin: 2.5%; */
+        margin: 0 auto;
 
         @mixin atSmall {
           display: block;
@@ -276,6 +303,7 @@
       }
 
       &--right {
+        right: 0;
         justify-self: end;
         width: 3px;
         margin: 2.5%;
@@ -295,6 +323,7 @@
 
     @mixin atMedium {
       flex-direction: row;
+      justify-content: space-evenly;
     }
 
     &__title {
@@ -304,7 +333,7 @@
       width: 100%;
 
       @mixin atMedium {
-        width: 50%;
+        width: auto;
         height: 100%;
       }
     }
@@ -317,7 +346,7 @@
       width: 100%;
 
       @mixin atMedium {
-        width: 50%;
+        width: auto;
         height: 100%;
       }
     }

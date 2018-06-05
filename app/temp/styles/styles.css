@@ -488,6 +488,7 @@ h3 {
 .about {
   width: 100%;
   height: 100%;
+  min-height: 550px;
   background-color: #2382B0;
   color: #FFFFFF;
   outline: none;
@@ -496,7 +497,22 @@ h3 {
 @media (min-width: 530px) {
 
 .about {
-    height: 33.4%
+    height: 40%;
+    min-height: 400px
+}
+  }
+
+@media (min-width: 800px) {
+
+.about {
+    min-height: 250px
+}
+  }
+
+@media (min-width: 1280px) {
+
+.about {
+    min-height: 300px
 }
   }
 
@@ -574,11 +590,27 @@ h3 {
 
 .contact {
   width: 100%;
-  height: 35%;
+  height: 25%;
+  min-height: 200px;
   background-color: #2382B0;
   color: #FFFFFF;
   outline: none;
 }
+
+@media (min-width: 530px) {
+
+.contact {
+    min-height: 250px
+}
+  }
+
+@media (min-width: 1280px) {
+
+.contact {
+    height: 35%;
+    min-height: 300px
+}
+  }
 
 .contact__title {
     margin: 0.5%;
@@ -605,7 +637,7 @@ h3 {
 @media (min-width: 1280px) {
 
 .contact__title {
-      font-size: 10em
+      font-size: 8em
   }
   }
 
@@ -648,19 +680,37 @@ h3 {
   position: relative;
   z-index: -1;
   width: 100%;
-  height: 100%;
+  height: 45%;
+  min-height: 250px;
   background-color: #111D23;
   color: #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-bottom: 0.75em solid #25ABEC;
   outline: none;
 }
 
 @media (min-width: 530px) {
 
 .hero {
-    height: 66.6%;
-    border-bottom: 1.25em solid #25ABEC
+    height: 35%;
+    min-height: 350px;
+    border-width: 1.25em
+}
+  }
+
+@media (min-width: 800px) {
+
+.hero {
+    height: 60%;
+    min-height: 400px
+}
+  }
+
+@media (min-width: 1280px) {
+
+.hero {
+    min-height: 600px
 }
   }
 
@@ -697,7 +747,7 @@ h3 {
 @media (min-width: 1280px) {
 
 .hero__name {
-      font-size: 5em
+      font-size: 6em
   }
   }
 
@@ -737,7 +787,7 @@ h3 {
 @media (min-width: 1280px) {
 
 .hero__tagline--main {
-        font-size: 4em
+        font-size: 5em
     }
   }
 
@@ -775,29 +825,40 @@ h3 {
 .portfolio {
   width: 100%;
   height: 400%;
+  min-height: 2275px;
   background-color: #e0e8ff;
   color: #1F4354;
   outline: none;
 }
 
+@media (min-width: 530px) {
+
+.portfolio {
+    height: 225%;
+    min-height: 2250px
+}
+  }
+
 @media (min-width: 675px) {
 
 .portfolio {
-    height: 150%
+    height: 125%;
+    min-height: 1250px
 }
   }
 
 @media (min-width: 1280px) {
 
 .portfolio {
-    height: 125%
+    min-height: 1000px
 }
   }
 
 @media (min-width: 1920px) {
 
 .portfolio {
-    height: 100%
+    height: 100%;
+    min-height: 800px
 }
   }
 
@@ -866,26 +927,30 @@ h3 {
     }
 
 .portfolio__content--image__1 {
-        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
+        background-image: url("../../assets/images/portfolio-image__300w--off-dist.png");
       }
 
 .portfolio__content--image__2 {
-        background-image: url("../../assets/images/portfolio-image__300w--calculator.png");
+        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
       }
 
 .portfolio__content--image__3 {
-        background-image: url("../../assets/images/portfolio-image__300w--twitch-streamers.png");
+        background-image: url("../../assets/images/portfolio-image__300w--calculator.png");
       }
 
 .portfolio__content--image__4 {
-        background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
+        background-image: url("../../assets/images/portfolio-image__300w--twitch-streamers.png");
       }
 
 .portfolio__content--image__5 {
-        background-image: url("../../assets/images/portfolio-image__300w--local-weather.png");
+        background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
       }
 
 .portfolio__content--image__6 {
+        background-image: url("../../assets/images/portfolio-image__300w--local-weather.png");
+      }
+
+.portfolio__content--image__7 {
         background-image: url("../../assets/images/portfolio-image__300w--deep-thoughts.png");
       }
 
@@ -939,6 +1004,7 @@ h3 {
 .site-footer {
   width: 100%;
   height: 20%;
+  min-height: 125px;
   background-color: #25ABEC;
   color: #111D23;
 }
@@ -946,7 +1012,22 @@ h3 {
 @media (min-width: 530px) {
 
 .site-footer {
-    height: 15%
+    height: 15%;
+    min-height: 150px
+}
+  }
+
+@media (min-width: 800px) {
+
+.site-footer {
+    min-height: 125px
+}
+  }
+
+@media (min-width: 1280px) {
+
+.site-footer {
+    min-height: 150px
 }
   }
 
@@ -1067,7 +1148,8 @@ h3 {
 
 .skills {
   width: 100%;
-  height: 125%;
+  height: 150%;
+  min-height: 850px;
   background-color: #89b9d3;
   color: #111D23;
   outline: none;
@@ -1076,14 +1158,31 @@ h3 {
 @media (min-width: 530px) {
 
 .skills {
-    height: 75%
+    height: 75%;
+    min-height: 750px
+}
+  }
+
+@media (min-width: 675px) {
+
+.skills {
+    height: 65%;
+    min-height: 650px
+}
+  }
+
+@media (min-width: 800px) {
+
+.skills {
+    height: 75%;
+    min-height: 500px
 }
   }
 
 @media (min-width: 1920px) {
 
 .skills {
-    height: 50%
+    height: 60%
 }
   }
 
@@ -1128,6 +1227,10 @@ h3 {
       font-size: 2em
   }
   }
+
+.skills__content--title {
+      display: inline;
+    }
 
 .skills__content--info {
       display: inline;
@@ -1199,32 +1302,39 @@ h3 {
 /* Hero Section */
 
 .wrapper--hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: [col-0] 20% [col-1] 20% [col-2] 20% [col-3] 20% [col-4] 20% [col-5];
-    grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5];
   }
 
+/* display: grid;
+    grid-template-columns: [col-0] 20% [col-1] 20% [col-2] 20% [col-3] 20% [col-4] 20% [col-5];
+    grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5]; */
+
 .wrapper--hero__image {
-      grid-column: col-0 / col-5;
+      display: none;
+    }
+
+/* grid-column: col-0 / col-5;
       grid-row: row-0 / row-3;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      justify-content: center;
       position: relative;
       overflow: hidden;
       z-index: -1;
       width: 100%;
       height: 100%;
-      border-bottom: 0.625em solid #25ABEC;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      opacity: 0.8;
-    }
+      border-bottom: 0.625em solid $blueLight;
+      box-sizing: border-box;
+      opacity: 0.8; */
 
 @media (min-width: 530px) {
 
@@ -1235,35 +1345,24 @@ h3 {
   }
 
 .wrapper--hero__info {
-      grid-column: col-0 / col-5;
+      display: block;
+      /* grid-column: col-0 / col-5;
       grid-row: row-3 / row-5;
       justify-self: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      height: 100%;
-      border-bottom: 0.625em solid #25ABEC;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
+      height: 100%; */
     }
 
-@media (min-width: 530px) {
+/* border-bottom: 0.625em solid $blueLight;
+      box-sizing: border-box;
 
-.wrapper--hero__info {
-        border-bottom: none
-    }
-  }
+      @mixin atSmall {
+        border-bottom: none;
+      } */
 
 @media (min-width: 800px) {
 
@@ -1380,13 +1479,13 @@ h3 {
   }
 
 .wrapper--about__content-below {
-        margin-top: 0.5em;
+        margin-top: 1em;
       }
 
 @media (min-width: 530px) {
 
 .wrapper--about__content-below {
-          margin-top: 1em
+          margin-top: 2em
       }
   }
 
@@ -1444,21 +1543,24 @@ h3 {
 @media (min-width: 675px) {
 
 .wrapper--portfolio__content {
-        height: 92.5%
+        height: 92.5%;
+        min-height: 1000px
     }
   }
 
 @media (min-width: 1280px) {
 
 .wrapper--portfolio__content {
-        height: 90%
+        height: 90%;
+        min-height: 800px
     }
   }
 
 @media (min-width: 1920px) {
 
 .wrapper--portfolio__content {
-        height: 87.5%
+        height: 87.5%;
+        min-height: 700px
     }
   }
 
@@ -1504,11 +1606,25 @@ h3 {
 /* Skills Section */
 
 .wrapper--skills {
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    /* display: grid;
     grid-template-columns: [skills-col-0] 50% [skills-col-50] 50% [skills-col-100];
-    grid-template-rows: [skills-row-0] 50% [skills-row-50] 50% [skills-row-100];
+    grid-template-rows: [skills-row-0] 50% [skills-row-50] 50% [skills-row-100]; */
     width: 100%;
     height: 100%;
+  }
+
+@media (min-width: 530px) {
+
+.wrapper--skills {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap
+  }
   }
 
 .wrapper--skills__content {
@@ -1524,6 +1640,7 @@ h3 {
               flex-direction: column;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+      width: 100%;
     }
 
 @media (min-width: 530px) {
@@ -1531,35 +1648,34 @@ h3 {
 .wrapper--skills__content {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
-                justify-content: space-evenly
+                justify-content: space-evenly;
+        width: 46.25%
     }
   }
 
-.wrapper--skills__content--first {
-        grid-column: skills-col-0 / skills-col-100;
+/* grid-column: skills-col-0 / skills-col-100;
         grid-row: skills-row-0 / skills-row-50;
-        width: 100%;
-      }
+        width: 100%; */
 
 @media (min-width: 530px) {
 
 .wrapper--skills__content--first {
-          grid-column: skills-col-0 / skills-col-50;
-          grid-row: skills-row-0 / skills-row-100
+          margin: 0 1.25% 0 2.5%
+          /* grid-column: skills-col-0 / skills-col-50;
+          grid-row: skills-row-0 / skills-row-100; */
       }
   }
 
-.wrapper--skills__content--second {
-        grid-column: skills-col-0 / skills-col-100;
+/* grid-column: skills-col-0 / skills-col-100;
         grid-row: skills-row-50 / skills-row-100;
-        width: 100%;
-      }
+        width: 100%; */
 
 @media (min-width: 530px) {
 
 .wrapper--skills__content--second {
-          grid-column: skills-col-50 / skills-col-100;
-          grid-row: skills-row-0 / skills-row-100
+          margin: 0 2.5% 0 1.25%
+          /* grid-column: skills-col-50 / skills-col-100;
+          grid-row: skills-row-0 / skills-row-100; */
       }
   }
 
@@ -1577,11 +1693,16 @@ h3 {
   }
 
 .wrapper--skills__line {
-      grid-column: skills-col-0 / skills-col-100;
-      grid-row: skills-row-0 / skills-row-100;
+      position: absolute;
+      top: 0;
+      bottom: 0;
     }
 
+/* grid-column: skills-col-0 / skills-col-100;
+      grid-row: skills-row-0 / skills-row-100; */
+
 .wrapper--skills__line--left {
+        left: 0;
         justify-self: start;
         width: 3px;
         margin: 2.5%;
@@ -1589,9 +1710,12 @@ h3 {
 
 .wrapper--skills__line--center {
         display: none;
-        justify-self: center;
+        left: 0;
+        right: 0;
+        /* justify-self: center; */
         width: 3px;
-        margin: 2.5%;
+        /* margin: 2.5%; */
+        margin: 0 auto;
       }
 
 @media (min-width: 530px) {
@@ -1602,6 +1726,7 @@ h3 {
   }
 
 .wrapper--skills__line--right {
+        right: 0;
         justify-self: end;
         width: 3px;
         margin: 2.5%;
@@ -1633,7 +1758,10 @@ h3 {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row
+              flex-direction: row;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly
   }
   }
 
@@ -1653,7 +1781,7 @@ h3 {
 @media (min-width: 800px) {
 
 .wrapper--contact__title {
-        width: 50%;
+        width: auto;
         height: 100%
     }
   }
@@ -1678,7 +1806,7 @@ h3 {
 @media (min-width: 800px) {
 
 .wrapper--contact__content {
-        width: 50%;
+        width: auto;
         height: 100%
     }
   }

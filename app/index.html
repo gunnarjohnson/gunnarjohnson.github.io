@@ -22,7 +22,7 @@
     <div id="site-navigation" class="site-header__navigation">
       <div class="wrapper--site-header__navigation">
         <nav class="wrapper--site-header__nav-items">
-          <a id="close-button" class="site-header__close-button" href="javascript:void(0)" >&times;</a>
+          <a id="close-button" class="site-header__close-button" href="javascript:void(0)">&times;</a>
           <a class="site-header__nav-item" href="#hero-section">Home</a>
           <a class="site-header__nav-item" href="#about-section">About</a>
           <a class="site-header__nav-item" href="#portfolio-section">Portfolio</a>
@@ -37,15 +37,15 @@
   <section id="hero-section" class="hero nav--transition">
     <div class="wrapper--hero">
       <div class="wrapper--hero__image">
-        <picture>
+        <!-- <picture>
           <source srcset="assets/images/hero-image__1920w--wide--placeholder.jpg" media="(min-width: 1280px)">
           <source srcset="assets/images/hero-image__1280w--placeholder.jpg" media="(min-width: 800px)">
           <img srcset="assets/images/hero-image__800w--placeholder.jpg" alt="Photo of Gunnar Johnson"  class="hero__image">
-        </picture>
+        </picture> -->
       </div>
       <div class="wrapper--hero__info">
         <h1 class="hero__name">Gunnar Johnson</h1>
-        <p class="hero__tagline hero__tagline--main">Front-End Web Developer</p>
+        <p class="hero__tagline hero__tagline--main">Web Developer</p>
         <div class="wrapper--hero__tagline">
           <p class="hero__tagline hero__tagline--other">Audio Producer</p>
           <p class="hero__tagline hero__tagline--other">Independent Musician</p>
@@ -62,11 +62,15 @@
         <h2 class="about__title">About</h2>
         <div class="wrapper--about__content-items">
           <p class="about__content">
-            I BUILD WEB APPS AND WEBSITES. The Internet is ever-evolving and I love learning its new technologies. Every day affords fresh opportunities to innovate. It's pretty sweet.
+            <span style="text-transform: uppercase;">I build web apps and websites.</span>
+            The Internet is always evolving and I love learning its new technologies. Every day affords fresh opportunities to innovate. It's pretty sweet.
           </p>
           <div class="wrapper--about__content-below">
             <div class="about__content-below">
-              <p class="about__content">I'M AVAILABLE FOR HIRE. Need a web developer? </p>
+              <p class="about__content">
+                <span style="text-transform: uppercase;">I'm available for hire.</span>
+                Need a web developer?
+              </p>
               <div class="about__content-below--contact">
                 <a class="about__content about__content-below--underline" href="#contact-section">Send me an e-mail</a>
                 <p class="about__content about__content-below--punctuation">.</p>
@@ -88,63 +92,63 @@
         <!-- Portfolio Items: 1st Pair -->
         <div class="wrapper--portfolio__content-pair">
           <!-- Portfolio Item #1 -->
-          <a class="portfolio__content" href="https://gunnarjohnson.github.io/udemy-travel-site/" target="_blank">
+          <a class="portfolio__content" href="https://ofdist.com/" target="_blank">
             <div class="portfolio__content--image portfolio__content--image__1"></div>
+            <div class="portfolio__content--overlay"></div>
+            <div class="portfolio__content--text">
+              <h4 class="portfolio__content--text__title">Office Furniture Distributors</h4>
+              <p class="portfolio__content--text__description">A WordPress site with a customized theme. Developed most of the front end.</p>
+            </div>
+          </a>
+          <!-- Portfolio Item #2 -->
+          <a class="portfolio__content" href="https://gunnarjohnson.github.io/udemy-travel-site/" target="_blank">
+            <div class="portfolio__content--image portfolio__content--image__2"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
               <h4 class="portfolio__content--text__title">Travel Site</h4>
               <p class="portfolio__content--text__description">A website prototype for a fictional travel company. Developed with modern methods and tools.</p>
             </div>
           </a>
-          <!-- Portfolio Item #2 -->
+        </div>
+        <!-- Portfolio Items: 2nd Pair -->
+        <div class="wrapper--portfolio__content-pair">
+          <!-- Portfolio Item #3 -->
           <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-js-calculator/" target="_blank">
-            <div class="portfolio__content--image portfolio__content--image__2"></div>
+            <div class="portfolio__content--image portfolio__content--image__3"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
               <h4 class="portfolio__content--text__title">TI-2511 Calculator</h4>
               <p class="portfolio__content--text__description">A web app that emulates a Texas Instruments calculator and enables the user to perform basic math.</p>
             </div>
           </a>
-        </div>
-        <!-- Portfolio Items: 2nd Pair -->
-        <div class="wrapper--portfolio__content-pair">
-          <!-- Portfolio Item #3 -->
+          <!-- Portfolio Item #4 -->
           <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-twitch-streamers/" target="_blank">
-            <div class="portfolio__content--image portfolio__content--image__3"></div>
+            <div class="portfolio__content--image portfolio__content--image__4"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
               <h4 class="portfolio__content--text__title">Twitch Streamers</h4>
               <p class="portfolio__content--text__description">A website that uses the Twitch API to display the statuses of specific Twitch channels.</p>
             </div>
           </a>
-          <!-- Portfolio Item #4 -->
+        </div>
+        <!-- Portfolio Items: 3rd Pair -->
+        <div class="wrapper--portfolio__content-pair">
+          <!-- Portfolio Item #5 -->
           <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-wikipedia-viewer/" target="_blank">
-            <div class="portfolio__content--image portfolio__content--image__4"></div>
+            <div class="portfolio__content--image portfolio__content--image__5"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
               <h4 class="portfolio__content--text__title">Wikipedia Viewer</h4>
               <p class="portfolio__content--text__description">A web app that uses the Wikipedia API to allow the user to search for articles and view the top ten.</p>
             </div>
           </a>
-        </div>
-        <!-- Portfolio Items: 3rd Pair -->
-        <div class="wrapper--portfolio__content-pair">
-          <!-- Portfolio Item #5 -->
+          <!-- Portfolio Item #6 -->
           <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-local-weather/" target="_blank">
-            <div class="portfolio__content--image portfolio__content--image__5"></div>
+            <div class="portfolio__content--image portfolio__content--image__6"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
               <h4 class="portfolio__content--text__title">Local Weather</h4>
               <p class="portfolio__content--text__description">A web app that uses the Google Maps Geocoding API and Dark Sky API to display the user's local weather conditions.</p>
-            </div>
-          </a>
-          <!-- Portfolio Item #6 -->
-          <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-random-quote-machine/" target="_blank">
-            <div class="portfolio__content--image portfolio__content--image__6"></div>
-            <div class="portfolio__content--overlay"></div>
-            <div class="portfolio__content--text">
-              <h4 class="portfolio__content--text__title">Deep Thoughts</h4>
-              <p class="portfolio__content--text__description">A web app that allows the user to view and/or tweet a random quote from Jack Handey.</p>
             </div>
           </a>
         </div>
@@ -165,23 +169,30 @@
         <div class="wrapper--skills__content-items">
           <h3 class="skills__title">Skills</h3>
           <ul class="skills__content">
-            <li>Front-End Architecture</li>
-            <li>Responsive Web Design</li>
-            <li>Semantic Markup</li>
-            <li>UX Principles</li>
-            <li>Version Control</li>
+            <li><p class="skills__content--title">Front-End Architecture</p></li>
+            <li><p class="skills__content--title">Responsive Web Design</p></li>
+            <li><p class="skills__content--title">Semantic Markup</p></li>
+            <li><p class="skills__content--title">UX Principles</p></li>
+            <li><p class="skills__content--title">Version Control</p></li>
           </ul>
         </div>
         <!-- Languages -->
         <div class="wrapper--skills__content-items">
           <h3 class="skills__title">Languages</h3>
           <ul class="skills__content">
-            <li>CSS5
+            <li>
+              <p class="skills__content--title">CSS3</p>
               <p class="skills__content--info">Autoprefixer, BEM, PostCSS, Sass</p>
             </li>
-            <li>HTML5</li>
-            <li>JavaScript
+            <li>
+              <p class="skills__content--title">HTML5</p>
+            </li>
+            <li>
+              <p class="skills__content--title">JavaScript</p>
               <p class="skills__content--info">ES6</p>
+            </li>
+            <li>
+              <p class="skills__content--title">PHP</p>
             </li>
           </ul>
         </div>
@@ -196,20 +207,25 @@
         <div class="wrapper--skills__content-items">
           <h3 class="skills__title">Tools</h3>
           <ul class="skills__content">
-            <li>CMS
-              <p class="skills__content--info">Wordpress</p>
+            <li>
+              <p class="skills__content--title">CMS</p>
+              <p class="skills__content--info">WordPress</p>
             </li>
-            <li>FWKs
+            <li>
+              <p class="skills__content--title">FWKs</p>
               <p class="skills__content--info">Bootstrap</p>
             </li>
-            <li>Git
-              <p class="skills__content--info">Bash, GitHub, GitKraken</p>
+            <li>
+              <p class="skills__content--title">Git</p>
+              <p class="skills__content--info">Bash, CMD, GitHub, GitKraken, GitLab</p>
             </li>
-            <li>Libs
+            <li>
+              <p class="skills__content--title">Libs</p>
               <p class="skills__content--info">jQuery</p>
             </li>
-            <li>NPM
-              <p class="skills__content--info">Gulp, Webpack</p>
+            <li>
+              <p class="skills__content--title">NPM</p>
+              <p class="skills__content--info">Babel, Gulp, Webpack</p>
             </li>
           </ul>
         </div>
@@ -217,23 +233,20 @@
         <div class="wrapper--skills__content-items">
           <h3 class="skills__title">Additional</h3>
           <ul class="skills__content">
-            <li>Audio
+            <li>
+              <p class="skills__content--title">Audio</p>
               <p class="skills__content--info">Audition, Pro Tools, REAPER</p>
             </li>
-            <!--
-            <li>CRM
-              <p class="skills__content--info">Vtiger</p>
-            </li>
-          -->
-            <li>Graphics
+            <li>
+              <p class="skills__content--title">Graphics</p>
               <p class="skills__content--info">Illustrator, Photoshop</p>
             </li>
-            <!--
-            <li>POS
-              <p class="skills__content--info">AIMsi, QuickBooks POS, Vend</p>
+            <li>
+              <p class="skills__content--title">Music</p>
+              <p class="skills__content--info">Bass, Guitar, Piano, Synth, Voice</p>
             </li>
-          -->
-            <li>Video
+            <li>
+              <p class="skills__content--title">Video</p>
               <p class="skills__content--info">After Effects, Final Cut Pro, Premiere Pro</p>
             </li>
           </ul>
@@ -253,12 +266,12 @@
         <h2 class="contact__title">Contact</h2>
       </div>
       <div class="wrapper--contact__content">
-        <p class="contact__email" type="text">gunnar@tonedev.com</p>
+        <p class="contact__email" type="text">gunnarmjohnson@gmail.com</p>
         <div class="wrapper--contact__icon-container">
-          <a class="contact__icon" href="mailto:gunnar@tonedev.com">
+          <a class="contact__icon" href="mailto:gunnarmjohnson@gmail.com">
             <img src="assets/images/icon-email__64w.png">
           </a>
-          <img id="copyEmail" class="contact__icon" src="assets/images/icon-copy__64w.png" data-clipboard-text="gunnar@tonedev.com">
+          <img id="copyEmail" class="contact__icon" src="assets/images/icon-copy__64w.png" data-clipboard-text="gunnarmjohnson@gmail.com">
         </div>
       </div>
     </div>
@@ -281,7 +294,7 @@
           <img src="assets/images/icon-linkedin__64w.png">
         </a>
       </div>
-      <p class="site-footer__copyright">© 2017 Gunnar Johnson</p>
+      <p class="site-footer__copyright">© 2018 Gunnar Johnson</p>
     </div>
   </footer>
 
