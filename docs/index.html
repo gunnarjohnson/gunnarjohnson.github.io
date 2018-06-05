@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.2.12/jquery.jgrowl.min.css" />
   <title>Gunnar Johnson</title>
 
-  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="stylesheet" href="app/styles/styles.css">
 
 </head>
 
@@ -17,15 +17,16 @@
 
   <!-- Header -->
   <header class="site-header">
+    <!-- Navigation -->
     <div id="open-button" class="site-header__open-button">&#9776;</div>
     <div id="site-navigation" class="site-header__navigation">
       <div class="wrapper--site-header__navigation">
         <nav class="wrapper--site-header__nav-items">
-          <a id="close-button" class="site-header__close-button" href="javascript:void(0)" >&times;</a>
+          <a id="close-button" class="site-header__close-button" href="javascript:void(0)">&times;</a>
           <a class="site-header__nav-item" href="#hero-section">Home</a>
           <a class="site-header__nav-item" href="#about-section">About</a>
-          <a class="site-header__nav-item" href="#skills-section">Skills</a>
           <a class="site-header__nav-item" href="#portfolio-section">Portfolio</a>
+          <a class="site-header__nav-item" href="#skills-section">Skills</a>
           <a class="site-header__nav-item" href="#contact-section">Contact</a>
         </nav>
       </div>
@@ -36,15 +37,15 @@
   <section id="hero-section" class="hero nav--transition">
     <div class="wrapper--hero">
       <div class="wrapper--hero__image">
-        <picture>
+        <!-- <picture>
           <source srcset="assets/images/hero-image__1920w--wide--placeholder.jpg" media="(min-width: 1280px)">
           <source srcset="assets/images/hero-image__1280w--placeholder.jpg" media="(min-width: 800px)">
           <img srcset="assets/images/hero-image__800w--placeholder.jpg" alt="Photo of Gunnar Johnson"  class="hero__image">
-        </picture>
+        </picture> -->
       </div>
       <div class="wrapper--hero__info">
         <h1 class="hero__name">Gunnar Johnson</h1>
-        <p class="hero__tagline hero__tagline--main">Front-End Web Developer</p>
+        <p class="hero__tagline hero__tagline--main">Web Developer</p>
         <div class="wrapper--hero__tagline">
           <p class="hero__tagline hero__tagline--other">Audio Producer</p>
           <p class="hero__tagline hero__tagline--other">Independent Musician</p>
@@ -57,47 +58,26 @@
   <!-- About Section -->
   <section id="about-section" class="about nav--transition">
     <div class="wrapper--about">
-      <div class="wrapper--about__title">
-        <h2 class="about__title">About</h2>
-      </div>
       <div class="wrapper--about__content">
-        <p class="about__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills-section" class="skills nav--transition">
-    <div class="wrapper--skills">
-      <div class="wrapper--skills__content">
-        <h3 class="skills__title">Skills 1</h3>
-        <ul class="skills__content">
-          <li>Lorem ipsum dolor</li>
-          <li>consectetur</li>
-          <li>sed do eiusmod</li>
-          <li>ut labore</li>
-          <li>Ut enim ad minim</li>
-        </ul>
-      </div>
-      <div class="wrapper--skills__content">
-        <h3 class="skills__title">Skills 2</h3>
-        <ul class="skills__content">
-          <li>Lorem ipsum dolor</li>
-          <li>consectetur</li>
-          <li>sed do eiusmod</li>
-          <li>ut labore</li>
-          <li>Ut enim ad minim</li>
-        </ul>
-      </div>
-      <div class="wrapper--skills__content">
-        <h3 class="skills__title">Skills 3</h3>
-        <ul class="skills__content">
-          <li>Lorem ipsum dolor</li>
-          <li>consectetur</li>
-          <li>sed do eiusmod</li>
-          <li>ut labore</li>
-          <li>Ut enim ad minim</li>
-        </ul>
+        <h2 class="about__title">About</h2>
+        <div class="wrapper--about__content-items">
+          <p class="about__content">
+            <span style="text-transform: uppercase;">I build web apps and websites.</span>
+            The Internet is always evolving and I love learning its new technologies. Every day affords fresh opportunities to innovate. It's pretty sweet.
+          </p>
+          <div class="wrapper--about__content-below">
+            <div class="about__content-below">
+              <p class="about__content">
+                <span style="text-transform: uppercase;">I'm available for hire.</span>
+                Need a web developer?
+              </p>
+              <div class="about__content-below--contact">
+                <a class="about__content about__content-below--underline" href="#contact-section">Send me an e-mail</a>
+                <p class="about__content about__content-below--punctuation">.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -112,66 +92,169 @@
         <!-- Portfolio Items: 1st Pair -->
         <div class="wrapper--portfolio__content-pair">
           <!-- Portfolio Item #1 -->
-          <a class="portfolio__content" href="#" target="_blank">
+          <a class="portfolio__content" href="https://ofdist.com/" target="_blank">
             <div class="portfolio__content--image portfolio__content--image__1"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
-              <h4 class="portfolio__content--text__title">Example 1</h4>
-              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 class="portfolio__content--text__title">Office Furniture Distributors</h4>
+              <p class="portfolio__content--text__description">A WordPress site with a customized theme. Developed most of the front end.</p>
             </div>
           </a>
           <!-- Portfolio Item #2 -->
-          <a class="portfolio__content" href="#" target="_blank">
+          <a class="portfolio__content" href="https://gunnarjohnson.github.io/udemy-travel-site/" target="_blank">
             <div class="portfolio__content--image portfolio__content--image__2"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
-              <h4 class="portfolio__content--text__title">Example 2</h4>
-              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 class="portfolio__content--text__title">Travel Site</h4>
+              <p class="portfolio__content--text__description">A website prototype for a fictional travel company. Developed with modern methods and tools.</p>
             </div>
           </a>
         </div>
         <!-- Portfolio Items: 2nd Pair -->
         <div class="wrapper--portfolio__content-pair">
           <!-- Portfolio Item #3 -->
-          <a class="portfolio__content" href="#" target="_blank">
+          <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-js-calculator/" target="_blank">
             <div class="portfolio__content--image portfolio__content--image__3"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
-              <h4 class="portfolio__content--text__title">Example 3</h4>
-              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 class="portfolio__content--text__title">TI-2511 Calculator</h4>
+              <p class="portfolio__content--text__description">A web app that emulates a Texas Instruments calculator and enables the user to perform basic math.</p>
             </div>
           </a>
           <!-- Portfolio Item #4 -->
-          <a class="portfolio__content" href="#" target="_blank">
+          <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-twitch-streamers/" target="_blank">
             <div class="portfolio__content--image portfolio__content--image__4"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
-              <h4 class="portfolio__content--text__title">Example 4</h4>
-              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 class="portfolio__content--text__title">Twitch Streamers</h4>
+              <p class="portfolio__content--text__description">A website that uses the Twitch API to display the statuses of specific Twitch channels.</p>
             </div>
           </a>
         </div>
         <!-- Portfolio Items: 3rd Pair -->
         <div class="wrapper--portfolio__content-pair">
           <!-- Portfolio Item #5 -->
-          <a class="portfolio__content" href="#" target="_blank">
+          <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-wikipedia-viewer/" target="_blank">
             <div class="portfolio__content--image portfolio__content--image__5"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
-              <h4 class="portfolio__content--text__title">Example 5</h4>
-              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 class="portfolio__content--text__title">Wikipedia Viewer</h4>
+              <p class="portfolio__content--text__description">A web app that uses the Wikipedia API to allow the user to search for articles and view the top ten.</p>
             </div>
           </a>
           <!-- Portfolio Item #6 -->
-          <a class="portfolio__content" href="#" target="_blank">
+          <a class="portfolio__content" href="https://gunnarjohnson.github.io/fcc-local-weather/" target="_blank">
             <div class="portfolio__content--image portfolio__content--image__6"></div>
             <div class="portfolio__content--overlay"></div>
             <div class="portfolio__content--text">
-              <h4 class="portfolio__content--text__title">Example 6</h4>
-              <p class="portfolio__content--text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h4 class="portfolio__content--text__title">Local Weather</h4>
+              <p class="portfolio__content--text__description">A web app that uses the Google Maps Geocoding API and Dark Sky API to display the user's local weather conditions.</p>
             </div>
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills-section" class="skills nav--transition">
+    <div class="wrapper--skills">
+      <!-- Line: Left -->
+      <div class="wrapper--skills__line wrapper--skills__line--left">
+        <div class="skills__line"></div>
+      </div>
+      <!-- Top Content -->
+      <div class="wrapper--skills__content wrapper--skills__content--first">
+        <!-- Skills -->
+        <div class="wrapper--skills__content-items">
+          <h3 class="skills__title">Skills</h3>
+          <ul class="skills__content">
+            <li><p class="skills__content--title">Front-End Architecture</p></li>
+            <li><p class="skills__content--title">Responsive Web Design</p></li>
+            <li><p class="skills__content--title">Semantic Markup</p></li>
+            <li><p class="skills__content--title">UX Principles</p></li>
+            <li><p class="skills__content--title">Version Control</p></li>
+          </ul>
+        </div>
+        <!-- Languages -->
+        <div class="wrapper--skills__content-items">
+          <h3 class="skills__title">Languages</h3>
+          <ul class="skills__content">
+            <li>
+              <p class="skills__content--title">CSS3</p>
+              <p class="skills__content--info">Autoprefixer, BEM, PostCSS, Sass</p>
+            </li>
+            <li>
+              <p class="skills__content--title">HTML5</p>
+            </li>
+            <li>
+              <p class="skills__content--title">JavaScript</p>
+              <p class="skills__content--info">ES6</p>
+            </li>
+            <li>
+              <p class="skills__content--title">PHP</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Line: Center -->
+      <div class="wrapper--skills__line wrapper--skills__line--center">
+        <div class="skills__line"></div>
+      </div>
+      <!-- Bottom Content -->
+      <div class="wrapper--skills__content wrapper--skills__content--second">
+        <!-- Tools -->
+        <div class="wrapper--skills__content-items">
+          <h3 class="skills__title">Tools</h3>
+          <ul class="skills__content">
+            <li>
+              <p class="skills__content--title">CMS</p>
+              <p class="skills__content--info">WordPress</p>
+            </li>
+            <li>
+              <p class="skills__content--title">FWKs</p>
+              <p class="skills__content--info">Bootstrap</p>
+            </li>
+            <li>
+              <p class="skills__content--title">Git</p>
+              <p class="skills__content--info">Bash, CMD, GitHub, GitKraken, GitLab</p>
+            </li>
+            <li>
+              <p class="skills__content--title">Libs</p>
+              <p class="skills__content--info">jQuery</p>
+            </li>
+            <li>
+              <p class="skills__content--title">NPM</p>
+              <p class="skills__content--info">Babel, Gulp, Webpack</p>
+            </li>
+          </ul>
+        </div>
+        <!-- Additional -->
+        <div class="wrapper--skills__content-items">
+          <h3 class="skills__title">Additional</h3>
+          <ul class="skills__content">
+            <li>
+              <p class="skills__content--title">Audio</p>
+              <p class="skills__content--info">Audition, Pro Tools, REAPER</p>
+            </li>
+            <li>
+              <p class="skills__content--title">Graphics</p>
+              <p class="skills__content--info">Illustrator, Photoshop</p>
+            </li>
+            <li>
+              <p class="skills__content--title">Music</p>
+              <p class="skills__content--info">Bass, Guitar, Piano, Synth, Voice</p>
+            </li>
+            <li>
+              <p class="skills__content--title">Video</p>
+              <p class="skills__content--info">After Effects, Final Cut Pro, Premiere Pro</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Line: Right -->
+      <div class="wrapper--skills__line wrapper--skills__line--right">
+        <div class="skills__line"></div>
       </div>
     </div>
   </section>
@@ -183,12 +266,12 @@
         <h2 class="contact__title">Contact</h2>
       </div>
       <div class="wrapper--contact__content">
-        <p class="contact__email" type="text">name@website.com</p>
+        <p class="contact__email" type="text">gunnarmjohnson@gmail.com</p>
         <div class="wrapper--contact__icon-container">
-          <a class="contact__icon" href="mailto:name@website.com">
+          <a class="contact__icon" href="mailto:gunnarmjohnson@gmail.com">
             <img src="assets/images/icon-email__64w.png">
           </a>
-          <img id="copyEmail" class="contact__icon" src="assets/images/icon-copy__64w.png" data-clipboard-text="name@website.com">
+          <img id="copyEmail" class="contact__icon" src="assets/images/icon-copy__64w.png" data-clipboard-text="gunnarmjohnson@gmail.com">
         </div>
       </div>
     </div>
@@ -211,14 +294,14 @@
           <img src="assets/images/icon-linkedin__64w.png">
         </a>
       </div>
-      <p class="site-footer__copyright">© 2017 Gunnar Johnson</p>
+      <p class="site-footer__copyright">© 2018 Gunnar Johnson</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.2.12/jquery.jgrowl.min.js"></script>
-  <script src="assets/scripts/app.js"></script>
+  <script src="app/scripts/app.js"></script>
 
 </body>
 
