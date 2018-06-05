@@ -1,5 +1,7 @@
 .wrapper {
 
+  /* Header (Navigation) */
+
   &--site-header {
 
     &__navigation {
@@ -16,21 +18,29 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 40%;
+      height: 50%;
+
+      @mixin atLargest {
+        height: 40%;
+      }
     }
   }
 
   /* Hero Section */
 
   &--hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: [col-0] 20% [col-1] 20% [col-2] 20% [col-3] 20% [col-4] 20% [col-5];
-    grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5];
+    grid-template-rows: [row-0] 20% [row-1] 20% [row-2] 20% [row-3] 20% [row-4] 20% [row-5]; */
 
     &__image {
-      grid-column: col-0 / col-5;
+      display: none;
+      /* grid-column: col-0 / col-5;
       grid-row: row-0 / row-3;
       display: flex;
       justify-content: center;
@@ -41,8 +51,7 @@
       height: 100%;
       border-bottom: 0.625em solid $blueLight;
       box-sizing: border-box;
-      opacity: 0.8;
-
+      opacity: 0.8; */
 
       @mixin atSmall {
         grid-row: row-0 / row-5;
@@ -51,7 +60,8 @@
     }
 
     &__info {
-      grid-column: col-0 / col-5;
+      display: block;
+      /* grid-column: col-0 / col-5;
       grid-row: row-3 / row-5;
       justify-self: center;
       display: flex;
@@ -59,13 +69,13 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 100%;
-      border-bottom: 0.625em solid $blueLight;
+      height: 100%; */
+      /* border-bottom: 0.625em solid $blueLight;
       box-sizing: border-box;
 
       @mixin atSmall {
         border-bottom: none;
-      }
+      } */
 
       @mixin atMedium {
         grid-column: col-2 / col-5;
@@ -98,59 +108,44 @@
       flex-direction: row;
     }
 
-    &__title {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      width: 90%;
-      margin: 5% 5% 2.5% 5%;
-
-      @mixin atMedium {
-        width: 23.3%;
-        margin: 0 5% 0 5%;
-        height: 90%;
-      }
-    }
-
-    &__content {
-      display: flex;
-      align-items: flex-start;
-      width: 90%;
-      margin: 2.5% 5% 5% 5%;
-
-      @mixin atMedium {
-        width: 66.7%;
-        height: 90%;
-        margin: 0 5% 0 0;
-      }
-    }
-  }
-
-  /* Skills Section */
-
-  &--skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-
-    @mixin atSmall {
-      flex-direction: row;
-    }
-
     &__content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+
+      @mixin atMedium {
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+      }
+
+      &-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+
+        @mixin atMedium {
+          width: 75%;
+        }
+      }
+
+      &-below {
+        margin-top: 1em;
+
+        @mixin atSmall {
+          margin-top: 2em;
+        }
+      }
     }
   }
 
   /* Portfolio Section */
 
   &--portfolio {
-
     width: 100%;
     height: 100%;
 
@@ -174,22 +169,25 @@
     }
 
     &__content {
-
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       height: 95%;
 
+
       @mixin atMedSmall {
         height: 92.5%;
+        min-height: 1000px;
       }
 
       @mixin atLarge {
         height: 90%;
+        min-height: 800px;
       }
 
       @mixin atLargest {
         height: 87.5%;
+        min-height: 700px;
       }
 
       &-pair {
@@ -213,6 +211,106 @@
     }
   }
 
+  /* Skills Section */
+
+  &--skills {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: [skills-col-0] 50% [skills-col-50] 50% [skills-col-100];
+    grid-template-rows: [skills-row-0] 50% [skills-row-50] 50% [skills-row-100]; */
+    width: 100%;
+    height: 100%;
+
+    @mixin atSmall {
+      flex-wrap: nowrap;
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+
+      @mixin atSmall {
+        justify-content: space-evenly;
+        width: 46.25%;
+      }
+
+      &--first {
+        /* grid-column: skills-col-0 / skills-col-100;
+        grid-row: skills-row-0 / skills-row-50;
+        width: 100%; */
+
+        @mixin atSmall {
+          margin: 0 1.25% 0 2.5%;
+          /* grid-column: skills-col-0 / skills-col-50;
+          grid-row: skills-row-0 / skills-row-100; */
+        }
+      }
+
+      &--second {
+        /* grid-column: skills-col-0 / skills-col-100;
+        grid-row: skills-row-50 / skills-row-100;
+        width: 100%; */
+
+        @mixin atSmall {
+          margin: 0 2.5% 0 1.25%;
+          /* grid-column: skills-col-50 / skills-col-100;
+          grid-row: skills-row-0 / skills-row-100; */
+        }
+      }
+
+      &-items {
+        display: inline-block;
+        width: 70%;
+        padding-left: 0;
+
+        @mixin atMedium {
+          padding-left: 10%;
+        }
+      }
+    }
+
+    &__line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      /* grid-column: skills-col-0 / skills-col-100;
+      grid-row: skills-row-0 / skills-row-100; */
+
+      &--left {
+        left: 0;
+        justify-self: start;
+        width: 3px;
+        margin: 2.5%;
+      }
+
+      &--center {
+        display: none;
+        left: 0;
+        right: 0;
+        /* justify-self: center; */
+        width: 3px;
+        /* margin: 2.5%; */
+        margin: 0 auto;
+
+        @mixin atSmall {
+          display: block;
+        }
+      }
+
+      &--right {
+        right: 0;
+        justify-self: end;
+        width: 3px;
+        margin: 2.5%;
+      }
+    }
+  }
+
   /* Contact Section */
 
   &--contact {
@@ -225,6 +323,7 @@
 
     @mixin atMedium {
       flex-direction: row;
+      justify-content: space-evenly;
     }
 
     &__title {
@@ -234,7 +333,7 @@
       width: 100%;
 
       @mixin atMedium {
-        width: 50%;
+        width: auto;
         height: 100%;
       }
     }
@@ -247,7 +346,7 @@
       width: 100%;
 
       @mixin atMedium {
-        width: 50%;
+        width: auto;
         height: 100%;
       }
     }

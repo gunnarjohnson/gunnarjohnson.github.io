@@ -1,12 +1,22 @@
 .about {
   width: 100%;
   height: 100%;
+  min-height: 550px;
   background-color: $blueMedium;
   color: #FFFFFF;
-
+  outline: none;
 
   @mixin atSmall {
-    height: 33.4%;
+    height: 40%;
+    min-height: 400px;
+  }
+
+  @mixin atMedium {
+    min-height: 250px;
+  }
+
+  @mixin atLarge {
+    min-height: 300px;
   }
 
   &__title {
@@ -14,8 +24,8 @@
     font-size: 3em;
     font-weight: 700;
 
-    @mixin atMedium {
-      font-size: 3.5em;
+    @mixin atSmall {
+      font-size: 4em;
       line-height: 0.8em;
     }
 
@@ -25,16 +35,45 @@
   }
 
   &__content {
+    display: inline;
     font-family: Josefin Sans, sans-serif;
     font-size: 1.6em;
     font-weight: 400;
 
     @mixin atMedium {
+      width: auto;
       font-size: 1.75em;
     }
 
-    @mixin atLarge {
+    @mixin atLargest {
       font-size: 2em;
+    }
+
+    &-below {
+      width: 100%;
+
+      &--contact {
+        display: inline;
+        word-spacing: -0.25em;
+
+        &:hover .about__content-below--underline {
+          color: $grayDark;
+        }
+
+        &:hover .about__content-below--punctuation {
+          color: $grayDark;
+        }
+      }
+
+      &--underline {
+        text-decoration: underline;
+        word-spacing: normal;
+        transition: color 0.2s ease-in-out;
+      }
+
+      &--punctuation {
+        transition: color 0.2s ease-in-out;
+      }
     }
   }
 }
