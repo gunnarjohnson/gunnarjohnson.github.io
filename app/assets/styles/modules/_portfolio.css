@@ -55,7 +55,7 @@
       box-shadow: 0 1px 25px 2.5px $grayDark;
     }
 
-    &:hover {
+    &:active, &:focus, &:hover {
 
       & .portfolio__content--overlay {
         opacity: 0.9;
