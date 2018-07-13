@@ -78,31 +78,43 @@
       box-sizing: border-box;
 
       &__1 {
-        background-image: url("../../assets/images/portfolio-image__300w--off-dist.png");
+        background-image: url("../../assets/images/portfolio-image__300w--autoquip.png");
       }
 
       &__2 {
-        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
+        background-image: url("../../assets/images/portfolio-image__300w--supply-chain.png");
       }
 
       &__3 {
-        background-image: url("../../assets/images/portfolio-image__300w--calculator.png");
+        background-image: url("../../assets/images/portfolio-image__300w--off-dist.png");
       }
 
       &__4 {
-        background-image: url("../../assets/images/portfolio-image__300w--twitch-streamers.png");
+        background-image: url("../../assets/images/portfolio-image__300w--lily-desert.png");
       }
 
       &__5 {
-        background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
+        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
       }
 
       &__6 {
-        background-image: url("../../assets/images/portfolio-image__300w--local-weather.png");
+        background-image: url("../../assets/images/portfolio-image__300w--calculator.png");
       }
 
       &__7 {
         background-image: url("../../assets/images/portfolio-image__300w--deep-thoughts.png");
+      }
+
+      &__8 {
+        background-image: url("../../assets/images/portfolio-image__300w--local-weather.png");
+      }
+
+      &__9 {
+        background-image: url("../../assets/images/portfolio-image__300w--twitch-streamers.png");
+      }
+
+      &__10 {
+        background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
       }
     }
 
@@ -134,16 +146,24 @@
       transition: all 0.2s ease-in-out;
 
       &__title {
-        margin: 0.5em 0 0.25em 0;
+        margin: 0.25em 0;
         font-family: Josefin Sans, sans-serif;
         font-size: 2.5em;
+        line-height: 1.1;
+        text-align: center;
+      }
+
+      &__subtitle {
+        font-family: Josefin Sans, sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
         text-align: center;
       }
 
       &__description {
-        margin: 0.25em 1em 0.5em 1em;
+        margin: 0.25em 1em;
         font-family: Shadows Into Light, sans-serif;
-        font-size: 1.75em;
+        font-size: 1.5em;
         font-weight: 400;
       }
     }
