@@ -9,7 +9,7 @@
  *    IE on Windows Phone and in iOS.
  */
 
-html {
+ html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -929,31 +929,43 @@ h3 {
     }
 
 .portfolio__content--image__1 {
-        background-image: url("../../assets/images/portfolio-image__300w--off-dist.png");
+        background-image: url("../../assets/images/portfolio-image__300w--autoquip.png");
       }
 
 .portfolio__content--image__2 {
-        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
+        background-image: url("../../assets/images/portfolio-image__300w--supply-chain.png");
       }
 
 .portfolio__content--image__3 {
-        background-image: url("../../assets/images/portfolio-image__300w--calculator.png");
+        background-image: url("../../assets/images/portfolio-image__300w--off-dist.png");
       }
 
 .portfolio__content--image__4 {
-        background-image: url("../../assets/images/portfolio-image__300w--twitch-streamers.png");
+        background-image: url("../../assets/images/portfolio-image__300w--lily-desert.png");
       }
 
 .portfolio__content--image__5 {
-        background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
+        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
       }
 
 .portfolio__content--image__6 {
-        background-image: url("../../assets/images/portfolio-image__300w--local-weather.png");
+        background-image: url("../../assets/images/portfolio-image__300w--calculator.png");
       }
 
 .portfolio__content--image__7 {
         background-image: url("../../assets/images/portfolio-image__300w--deep-thoughts.png");
+      }
+
+.portfolio__content--image__8 {
+        background-image: url("../../assets/images/portfolio-image__300w--local-weather.png");
+      }
+
+.portfolio__content--image__9 {
+        background-image: url("../../assets/images/portfolio-image__300w--twitch-streamers.png");
+      }
+
+.portfolio__content--image__10 {
+        background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
       }
 
 .portfolio__content--overlay {
@@ -990,16 +1002,24 @@ h3 {
     }
 
 .portfolio__content--text__title {
-        margin: 0.5em 0 0.25em 0;
+        margin: 0.25em 0;
         font-family: Josefin Sans, sans-serif;
         font-size: 2.5em;
+        line-height: 1.1;
+        text-align: center;
+      }
+
+.portfolio__content--text__subtitle {
+        font-family: Josefin Sans, sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
         text-align: center;
       }
 
 .portfolio__content--text__description {
-        margin: 0.25em 1em 0.5em 1em;
+        margin: 0.25em 1em;
         font-family: Shadows Into Light, sans-serif;
-        font-size: 1.75em;
+        font-size: 1.5em;
         font-weight: 400;
       }
 
@@ -1236,7 +1256,7 @@ h3 {
 
 .skills__content--info {
       display: inline;
-      font-size: 0.8em;
+      font-size: 0.55em;
       font-style: italic;
       color: #1F4354;
     }
@@ -1244,7 +1264,7 @@ h3 {
 @media (min-width: 1280px) {
 
 .skills__content--info {
-        font-size: 0.55em
+        font-size: 0.8em
     }
   }
 
