@@ -945,7 +945,7 @@ h3 {
       }
 
 .portfolio__content--image__5 {
-        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
+        background-image: url("../../assets/images/portfolio-image__300w--pomodoro-clock.png");
       }
 
 .portfolio__content--image__6 {
@@ -966,6 +966,10 @@ h3 {
 
 .portfolio__content--image__10 {
         background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
+      }
+
+.portfolio__content--image__11 {
+        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
       }
 
 .portfolio__content--overlay {

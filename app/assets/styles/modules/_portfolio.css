@@ -94,7 +94,7 @@
       }
 
       &__5 {
-        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
+        background-image: url("../../assets/images/portfolio-image__300w--pomodoro-clock.png");
       }
 
       &__6 {
@@ -115,6 +115,10 @@
 
       &__10 {
         background-image: url("../../assets/images/portfolio-image__300w--wikipedia-viewer.png");
+      }
+
+      &__11 {
+        background-image: url("../../assets/images/portfolio-image__300w--clear-view-escapes.png");
       }
     }
 
