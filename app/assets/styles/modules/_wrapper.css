@@ -122,6 +122,14 @@
         height: auto;
       }
 
+      @supports (-ms-ime-align:auto)  {
+        justify-content: space-around;
+      }
+
+      @media all and (-ms-high-contrast:none) {
+        justify-content: space-around;
+      }
+
       &-items {
         display: flex;
         flex-direction: column;
@@ -237,6 +245,14 @@
       @mixin atSmall {
         justify-content: space-evenly;
         width: 46.25%;
+
+        @supports (-ms-ime-align:auto)  {
+          justify-content: space-around;
+        }
+  
+        @media all and (-ms-high-contrast:none) {
+          justify-content: space-around;
+        }
       }
 
       &--first {
@@ -324,6 +340,14 @@
     @mixin atMedium {
       flex-direction: row;
       justify-content: space-evenly;
+    }
+
+    @supports (-ms-ime-align:auto)  {
+      justify-content: space-around;
+    }
+
+    @media all and (-ms-high-contrast:none) {
+      justify-content: space-around;
     }
 
     &__title {
